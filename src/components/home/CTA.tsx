@@ -33,12 +33,12 @@ const CTA = () => {
                     <motion.a
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        href="https://wa.me/51960153222?text=Hola,%20deseo%20solicitar%20asesoría%20especializada"
+                        href="https://wa.me/51996087437?text=Hola,%20deseo%20solicitar%20asesoría%20especializada"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-4 bg-secondary-900 text-white px-12 py-6 rounded-full font-black uppercase tracking-[0.2em] text-xs shadow-2xl hover:bg-primary-600 transition-all duration-300"
                     >
-                        Solicitar Asesoría de Ingeniería
+                        Contáctate con oficina técnica
                         <ArrowRight size={20} />
                     </motion.a>
 

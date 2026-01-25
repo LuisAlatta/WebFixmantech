@@ -316,7 +316,7 @@ const ProductsPage = () => {
                                         </div>
                                         <div className="relative z-10 mt-12 bg-white/5 p-6 rounded-3xl border border-white/10">
                                             <p className="text-xs text-secondary-400 font-black uppercase tracking-widest mb-2">Asistencia Técnica</p>
-                                            <a href="https://wa.me/51960153222" className="text-white font-bold hover:text-primary-400 transition-colors">+51 960 153 222</a>
+                                            <a href="https://wa.me/51996087437" className="text-white font-bold hover:text-primary-400 transition-colors">+51 996 087 437</a>
                                         </div>
                                     </div>
 
@@ -438,7 +438,7 @@ const ProductsPage = () => {
                                             <p className="text-secondary-900 font-bold">Solicite un presupuesto técnico hoy mismo.</p>
                                         </div>
                                         <a
-                                            href={`https://wa.me/51960153222?text=Hola, deseo una cotización del producto: ${selectedProduct.name}`}
+                                            href={`https://wa.me/51996087437?text=Hola, deseo una cotización del producto: ${selectedProduct.name}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="px-12 py-5 bg-secondary-900 text-white rounded-full font-black uppercase tracking-widest text-xs hover:bg-primary-600 transition-all shadow-xl flex items-center gap-3"
@@ -460,16 +460,19 @@ const ProductsPage = () => {
                 >
                     <div className="absolute top-0 right-0 w-96 h-96 bg-primary-600/10 rounded-full blur-[100px] -mr-48 -mt-48" />
                     <h2 className="text-4xl md:text-6xl font-[900] text-white mb-8 tracking-tighter uppercase relative z-10">
-                        ¿Requiere una solución <span className="text-primary-500 text-shadow-glow">Específica</span>?
+                        Soluciones de ingeniería diseñadas <span className="text-primary-500 text-shadow-glow">para decisiones estratégicas</span>?
                     </h2>
                     <p className="text-secondary-300 text-xl mb-12 max-w-2xl mx-auto font-light leading-relaxed relative z-10">
-                        Nuestro equipo de ingenieros puede desarrollar componentes personalizados para sus necesidades operativas más críticas.
+                        Soluciones de alto rendimiento para maximizar el valor de sus activos industriales
+                        Ofrecemos componentes y consumibles diseñados estratégicamente para extender la vida útil de sus equipos, optimizar la eficiencia operativa y garantizar la continuidad de sus operaciones críticas.
+                        Nuestro enfoque combina ingeniería de precisión, calidad certificada y soporte especializado, asegurando que cada inversión genere retorno tangible, reducción de riesgos y ventajas competitivas sostenibles para su organización.
+
                     </p>
                     <Link
                         to="/contactenos"
                         className="inline-block relative z-10 px-16 py-6 bg-white text-primary-600 rounded-full font-black uppercase tracking-widest text-sm hover:bg-primary-600 hover:text-white transition-all shadow-[0_0_30px_rgba(255,255,255,0.2)]"
                     >
-                        Hablar con Ingeniería
+                        contáctate con área de ventas
                     </Link>
                 </motion.div>
             </div>

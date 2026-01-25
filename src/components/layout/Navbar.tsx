@@ -60,7 +60,7 @@ const Navbar = () => {
                         <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            href="https://wa.me/51960153222"
+                            href="https://wa.me/51996087437"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-8 py-3 bg-secondary-900 text-white text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-primary-600 transition-all shadow-xl shadow-secondary-900/10"
@@ -105,7 +105,7 @@ const Navbar = () => {
                                 </NavLink>
                             ))}
                             <a
-                                href="https://wa.me/51960153222"
+                                href="https://wa.me/51996087437"
                                 className="mt-4 p-5 bg-primary-600 text-white text-center rounded-2xl font-black uppercase tracking-[0.2em] text-xs"
                             >
                                 WhatsApp Directo

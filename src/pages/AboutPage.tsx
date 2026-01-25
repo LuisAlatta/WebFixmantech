@@ -59,7 +59,7 @@ const AboutPage = () => {
                         <div className="w-20 h-2 bg-primary-500 mb-10" />
                         <h2 className="text-primary-600 font-black uppercase tracking-[0.2em] text-sm mb-4">Trayectoria</h2>
                         <h3 className="text-5xl font-[900] text-secondary-900 mb-10 leading-tight tracking-tight uppercase">
-                            Décadas de Experiencia en <span className="text-primary-500">Mantenimiento Crítico</span>
+                            Décadas de Experiencia en <span className="text-primary-500">Mantenimiento mecánico </span>
                         </h3>
                         <div className="space-y-6 text-xl text-secondary-600 font-light leading-relaxed text-justify">
                             <p>
@@ -107,7 +107,13 @@ const AboutPage = () => {
                         </div>
                         <h3 className="text-4xl font-[900] mb-8 uppercase tracking-tighter">Misión</h3>
                         <p className="text-xl text-secondary-300 font-light leading-relaxed">
-                            Proveer soluciones integrales de ingeniería con los más altos estándares globales de seguridad y eficiencia, garantizando que su industria nunca se detenga.
+                            “Proporcionar soluciones integrales de ingeniería innovadoras, confiables y a medida, que optimicen procesos, prolonguen la vida útil de los equipos y generen valor sostenible para nuestros clientes y socios estratégicos en todo el país.”
+
+                        </p> <br />
+                        <p className="text-xl text-secondary-300 font-light leading-relaxed">
+                            Nos enfocamos en desarrollar y ejecutar proyectos de ingeniería metalmecánica, con los más altos estándares de calidad, seguridad y eficiencia. Nuestro objetivo es apoyar a nuestros clientes en la toma de decisiones estratégicas, enfrentar desafíos operativos complejos y fortalecer su competitividad en un entorno industrial cada vez más exigente.
+                            A través de nuestro trabajo, buscamos ser un aliado estratégico que combina innovación, excelencia técnica y visión empresarial, asegurando que cada proyecto entregue resultados tangibles, sostenibles y medibles, alineados con los objetivos de negocio de nuestros clientes y socios estratégicos.
+
                         </p>
                     </motion.div>
 
@@ -123,7 +129,13 @@ const AboutPage = () => {
                         </div>
                         <h3 className="text-4xl font-[900] mb-8 uppercase tracking-tighter text-white">Visión</h3>
                         <p className="text-xl text-white/80 font-light leading-relaxed">
-                            Consolidarnos como la referencia técnica indiscutible en Sudamérica, siendo reconocidos por nuestra innovación disruptiva y excelencia en ingeniería de mantenimiento.
+                            "Ser reconocidos a nivel nacional como la empresa líder en soluciones integrales de ingeniería, combinando innovación, confiabilidad y excelencia operacional para generar valor tangible y sostenible para nuestros clientes y socios estratégicos.”
+                            <br /><br />
+                            En FIXMANTECH SAC, aspiramos a transformar la forma en que la ingeniería impulsa los negocios en Perú consolidando nuestra presencia nacional mediante la ejecución de proyectos estratégicos en metalmecánica.
+                            Buscamos convertir los desafíos operativos en oportunidades de crecimiento, ofreciendo soluciones a medida que optimizan procesos, prolongan la vida útil de los activos y fortalecen la competitividad de nuestros clientes.
+                            Nuestro compromiso con la innovación, la eficiencia y la excelencia nos permite acompañar a empresas de gran escala en la consecución de sus objetivos, generando un impacto positivo, medible y sostenible en cada proyecto que realizamos.
+                            Con esta visión, nos posicionamos como un aliado estratégico confiable, respaldado por la experiencia y el reconocimiento de nuestros socios, con la meta de seguir expandiendo nuestra capacidad de servicio a nivel nacional para 2025 y más allá.
+
                         </p>
                     </motion.div>
                 </div>

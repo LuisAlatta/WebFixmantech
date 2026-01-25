@@ -8,13 +8,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
                     {/* Brand Info */}
                     <div>
-                        <div className="mb-6">
-                            <img
-                                src="/images/logo_fixmantech.png"
-                                alt="FIXMANTECH Logo"
-                                className="h-12 w-auto object-contain brightness-0 invert"
-                            />
-                        </div>
+
                         <p className="text-secondary-400 text-sm leading-relaxed mb-6">
                             Soluciones integrales de ingeniería y servicios técnicos especializados. Calidad y profesionalismo en cada proyecto.
                         </p>
@@ -91,15 +85,15 @@ const Footer = () => {
                             <li className="flex items-start gap-3">
                                 <Phone className="text-primary-400 shrink-0 mt-1" size={20} />
                                 <div className="text-secondary-400">
-                                    <p>+51 960 153 222</p>
                                     <p>+51 996 087 437</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
                                 <Mail className="text-primary-400 shrink-0 mt-1" size={20} />
                                 <div className="text-secondary-400">
-                                    <p>gerencia_general@fixmantech.com</p>
+                                    <p>Gerencia_Ventas@fixmantech.com</p>
                                     <p>operaciones@fixmantech.com</p>
+                                    <p>ventas@fixmantech.com</p>
                                 </div>
                             </li>
                         </ul>

@@ -41,7 +41,7 @@ const Hero = () => {
                             <motion.a
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                href="https://wa.me/51960153222?text=Hola,%20quisiera%20solicitar%20una%20cotización"
+                                href="https://wa.me/51996087437?text=Hola,%20quisiera%20solicitar%20una%20cotización"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group px-10 py-5 bg-primary-600 text-white rounded-full font-black uppercase tracking-widest text-xs flex items-center gap-3 hover:bg-secondary-900 transition-all shadow-2xl shadow-primary-500/30"

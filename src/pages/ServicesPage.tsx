@@ -178,10 +178,10 @@ const ServicesPage = () => {
                         className="max-w-4xl"
                     >
                         <h1 className="text-6xl md:text-8xl font-[900] mb-8 tracking-tighter uppercase leading-none text-secondary-900">
-                            PRECISIÓN PLASMADA <span className="text-primary-500">EN INGENIERÍA</span>
+                            INGIENERIA EN PRECISION DE       <span className="text-primary-500">PLASMADA</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-secondary-900 max-w-2xl font-light leading-relaxed">
-                            SERVICIO Y SOLUCIONES EN INGENIERIA A MEDIDA PARA LAS GRANDES EMPRESAS
+                            Desarrollamos soluciones técnicas personalizadas que impulsan la eficiencia, la innovación y el crecimiento a media para las grandes empresas.
                         </p>
                     </motion.div>
                 </div>
@@ -306,7 +306,7 @@ const ServicesPage = () => {
                                     </div>
 
                                     <a
-                                        href="https://wa.me/51960153222"
+                                        href="https://wa.me/51996087437"
                                         className="inline-flex items-center gap-4 py-5 px-12 bg-secondary-900 text-white rounded-full font-black uppercase tracking-widest text-xs hover:bg-primary-600 transition-all shadow-xl active:scale-95"
                                     >
                                         Consultar Proyecto Especial <ArrowRight size={20} />
@@ -331,7 +331,7 @@ const ServicesPage = () => {
                             ¿Listo para llevar su industria al <span className="text-primary-500">Siguiente Nivel</span>?
                         </h2>
                         <a
-                            href="https://wa.me/51960153222"
+                            href="https://wa.me/51996087437"
                             className="inline-block px-16 py-6 bg-white text-secondary-900 rounded-full font-black uppercase tracking-widest text-sm hover:bg-primary-600 hover:text-white transition-all shadow-2xl active:scale-95"
                         >
                             Solicitar Presupuesto Técnico
