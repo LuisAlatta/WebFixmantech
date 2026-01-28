@@ -106,11 +106,11 @@ const AboutPage = () => {
                             <Target size={32} />
                         </div>
                         <h3 className="text-4xl font-[900] mb-8 uppercase tracking-tighter">Misión</h3>
-                        <p className="text-xl text-secondary-300 font-light leading-relaxed">
+                        <p className="text-xl text-secondary-300 font-light leading-relaxed text-justify">
                             “Proporcionar soluciones integrales de ingeniería innovadoras, confiables y a medida, que optimicen procesos, prolonguen la vida útil de los equipos y generen valor sostenible para nuestros clientes y socios estratégicos en todo el país.”
 
                         </p> <br />
-                        <p className="text-xl text-secondary-300 font-light leading-relaxed">
+                        <p className="text-xl text-secondary-300 font-light leading-relaxed text-justify">
                             Nos enfocamos en desarrollar y ejecutar proyectos de ingeniería metalmecánica, con los más altos estándares de calidad, seguridad y eficiencia. Nuestro objetivo es apoyar a nuestros clientes en la toma de decisiones estratégicas, enfrentar desafíos operativos complejos y fortalecer su competitividad en un entorno industrial cada vez más exigente.
                             A través de nuestro trabajo, buscamos ser un aliado estratégico que combina innovación, excelencia técnica y visión empresarial, asegurando que cada proyecto entregue resultados tangibles, sostenibles y medibles, alineados con los objetivos de negocio de nuestros clientes y socios estratégicos.
 
@@ -128,7 +128,7 @@ const AboutPage = () => {
                             <Eye size={32} />
                         </div>
                         <h3 className="text-4xl font-[900] mb-8 uppercase tracking-tighter text-white">Visión</h3>
-                        <p className="text-xl text-white/80 font-light leading-relaxed">
+                        <p className="text-xl text-white/80 font-light leading-relaxed text-justify">
                             "Ser reconocidos a nivel nacional como la empresa líder en soluciones integrales de ingeniería, combinando innovación, confiabilidad y excelencia operacional para generar valor tangible y sostenible para nuestros clientes y socios estratégicos.”
                             <br /><br />
                             En FIXMANTECH SAC, aspiramos a transformar la forma en que la ingeniería impulsa los negocios en Perú consolidando nuestra presencia nacional mediante la ejecución de proyectos estratégicos en metalmecánica.
