@@ -178,7 +178,7 @@ const ServicesPage = () => {
                         className="max-w-4xl"
                     >
                         <h1 className="text-6xl md:text-8xl font-[900] mb-8 tracking-tighter uppercase leading-none text-secondary-900">
-                            INGIENERIA DE PLASMA <span className="text-primary-500">DE ALTA PRECISION</span>
+                            INGIENERÍA DE PLASMA <span className="text-primary-500">DE ALTA PRECISIÓN</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-secondary-900 max-w-2xl font-light leading-relaxed">
                             Desarrollamos soluciones técnicas personalizadas que impulsan la eficiencia, la innovación y el crecimiento a media para las grandes empresas.
