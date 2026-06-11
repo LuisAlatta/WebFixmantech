@@ -99,7 +99,6 @@ const services: Service[] = [
             {
                 type: 'list', items: [
                     'Mantenimiento general en plantas concentradoras, tanto preventivo como correctivo.',
-                    'Fabricación y montaje de estructuras metálicas, bases y soportes para equipos industriales.',
                     'Diseño y ejecución de proyectos personalizados, según las necesidades operativas de cada planta.',
                     'Asistencia técnica en planta, asegurando una operación continua y segura.'
                 ]

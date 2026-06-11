@@ -292,11 +292,11 @@ const ProductsPage = () => {
                                 initial={{ opacity: 0, scale: 0.95, y: 20 }}
                                 animate={{ opacity: 1, scale: 1, y: 0 }}
                                 exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                                className="bg-white w-full max-w-6xl max-h-[90vh] overflow-y-auto rounded-[4rem] shadow-2xl relative z-10 flex flex-col"
+                                className="bg-white w-full max-w-6xl max-h-[90vh] overflow-hidden rounded-[2rem] shadow-2xl relative z-10 flex flex-col"
                             >
-                                <div className="flex flex-col md:flex-row md:h-[88vh] md:max-h-[760px]">
+                                <div className="flex flex-col md:flex-row flex-1 min-h-0">
                                     {/* Sidebar Category Info */}
-                                    <div className="w-full md:w-1/3 bg-secondary-900 p-12 flex flex-col justify-between relative overflow-hidden">
+                                    <div className="w-full md:w-1/3 bg-secondary-900 p-12 flex flex-col justify-between relative overflow-hidden shrink-0">
                                         <div className="absolute inset-0 opacity-20 pointer-events-none">
                                             <img src={selectedCategory.image} className="w-full h-full object-cover" alt="" />
                                         </div>
@@ -322,7 +322,7 @@ const ProductsPage = () => {
                                     </div>
 
                                     {/* Products Grid */}
-                                    <div className="w-full md:w-2/3 p-12 overflow-y-auto bg-secondary-50">
+                                    <div className="w-full md:w-2/3 p-12 overflow-y-auto bg-secondary-50 min-h-0">
                                         <h3 className="text-xl font-black text-secondary-900 mb-8 uppercase tracking-tight flex items-center gap-3">
                                             <div className="w-1.5 h-6 bg-primary-500 rounded-full" />
                                             Productos en esta Línea
@@ -370,7 +370,7 @@ const ProductsPage = () => {
                                 initial={{ opacity: 0, scale: 0.9, y: 50 }}
                                 animate={{ opacity: 1, scale: 1, y: 0 }}
                                 exit={{ opacity: 0, scale: 0.9, y: 50 }}
-                                className="bg-white w-full max-w-4xl max-h-[85vh] overflow-y-auto rounded-[3.5rem] shadow-2xl relative z-20 flex flex-col"
+                                className="bg-white w-full max-w-4xl max-h-[85vh] overflow-y-auto rounded-[2rem] shadow-2xl relative z-20 flex flex-col"
                             >
                                 <div className="p-8 md:p-16">
                                     <div className="flex justify-between items-start mb-12">
