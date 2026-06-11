@@ -81,6 +81,11 @@ header * {
   text-shadow: none;
 }
 
+/* Sombra más tenue dentro de los modales de servicios */
+.svc-modal * {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+}
+
 /* Scrollbar moderno e integrado (toda la app y modales) */
 * {
   scrollbar-width: thin;

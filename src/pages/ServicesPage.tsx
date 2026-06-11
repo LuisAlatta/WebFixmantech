@@ -55,7 +55,7 @@ const services: Service[] = [
         modalImage: '/nuevas imagenes/IMAGEN 009 - SISTEMA DE NIEBLA.png',
         icon: <Wrench />,
         content: [
-            { type: 'paragraph', text: 'Sistema de niebla seca para control de polución.' },
+            { type: 'paragraph', text: 'Tecnología en supresión de polvo de alta eficiencia utilizando microgotas atomizadas que capturan partículas suspendidas en el aire, controlando emisiones fugitivas sin humedecer significativamente el material procesado y/o equipos, aplicando niebla seca, consumo mínimo de agua.' },
             {
                 type: 'list', items: [
                     'Consumo de agua optimizado, desde 0.5 L/min por punto de aplicación.',
@@ -255,7 +255,7 @@ const ServicesPage = () => {
                             initial={{ opacity: 0, y: 50, scale: 0.9 }}
                             animate={{ opacity: 1, y: 0, scale: 1 }}
                             exit={{ opacity: 0, y: 50, scale: 0.9 }}
-                            className="bg-white w-full max-w-7xl max-h-[90vh] rounded-[2.5rem] shadow-2xl relative z-10 overflow-hidden flex flex-col"
+                            className="svc-modal bg-white w-full max-w-7xl max-h-[90vh] rounded-[2.5rem] shadow-2xl relative z-10 overflow-hidden flex flex-col"
                         >
                             <div className="flex flex-col lg:flex-row lg:h-[90vh] lg:max-h-[840px]">
                                 {/* Image Column */}
@@ -306,7 +306,7 @@ const ServicesPage = () => {
                                                             {block.items?.map((item, i) => (
                                                                 <div key={i} className="flex items-start gap-2.5 group">
                                                                     <CheckCircle2 size={17} className="text-primary-600 shrink-0 mt-0.5" />
-                                                                    <p className="text-[15px] text-secondary-600 leading-snug">{item}</p>
+                                                                    <p className="text-base font-bold text-black leading-snug">{item}</p>
                                                                 </div>
                                                             ))}
                                                         </div>
@@ -317,14 +317,14 @@ const ServicesPage = () => {
                                                         {block.items?.map((item, i) => (
                                                             <div key={i} className="flex items-start gap-3 group">
                                                                 <CheckCircle2 size={18} className="text-primary-600 shrink-0 mt-0.5" />
-                                                                <p className="text-base text-secondary-700 leading-snug">{item}</p>
+                                                                <p className="text-lg font-bold text-black leading-snug">{item}</p>
                                                             </div>
                                                         ))}
                                                     </div>
                                                 )}
                                                 {block.type === 'paragraph' && (
                                                     <div className="bg-secondary-50 p-5 rounded-2xl border border-secondary-100 shadow-inner">
-                                                        <p className="text-[15px] text-secondary-900 leading-relaxed">{block.text}</p>
+                                                        <p className="text-base font-bold text-black leading-relaxed">{block.text}</p>
                                                     </div>
                                                 )}
                                             </div>
