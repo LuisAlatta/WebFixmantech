@@ -322,12 +322,13 @@ const ProductsPage = () => {
                                     </div>
 
                                     {/* Products Grid */}
-                                    <div className="w-full md:w-2/3 p-12 overflow-y-auto bg-secondary-50 min-h-0">
-                                        <h3 className="text-xl font-black text-secondary-900 mb-8 uppercase tracking-tight flex items-center gap-3">
+                                    <div className="w-full md:w-2/3 bg-secondary-50 min-h-0 flex flex-col p-8 md:p-10">
+                                        <h3 className="text-xl font-black text-secondary-900 mb-6 uppercase tracking-tight flex items-center gap-3 shrink-0">
                                             <div className="w-1.5 h-6 bg-primary-500 rounded-full" />
                                             Productos en esta Línea
                                         </h3>
-                                        <div className="grid grid-cols-1 gap-6">
+                                        <div className="flex-1 min-h-0 overflow-y-auto pr-3 -mr-4">
+                                            <div className="grid grid-cols-1 gap-6">
                                             {selectedCategory.products.map((product) => (
                                                 <motion.div
                                                     key={product.id}
@@ -347,6 +348,7 @@ const ProductsPage = () => {
                                                     </div>
                                                 </motion.div>
                                             ))}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -370,9 +372,9 @@ const ProductsPage = () => {
                                 initial={{ opacity: 0, scale: 0.9, y: 50 }}
                                 animate={{ opacity: 1, scale: 1, y: 0 }}
                                 exit={{ opacity: 0, scale: 0.9, y: 50 }}
-                                className="bg-white w-full max-w-4xl max-h-[85vh] overflow-y-auto rounded-[2rem] shadow-2xl relative z-20 flex flex-col"
+                                className="bg-white w-full max-w-4xl max-h-[85vh] overflow-hidden rounded-2xl shadow-2xl relative z-20 flex flex-col"
                             >
-                                <div className="p-8 md:p-16">
+                                <div className="flex-1 min-h-0 overflow-y-auto p-8 md:p-14 pr-5 md:pr-9 mr-3 my-3">
                                     <div className="flex justify-between items-start mb-12">
                                         <div className="max-w-2xl">
                                             <h2 className="text-4xl md:text-5xl font-[900] text-secondary-900 mb-4 leading-none uppercase tracking-tighter">
