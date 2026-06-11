@@ -91,7 +91,7 @@ const ServicesPreview = () => {
                     </div>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 auto-rows-fr">
+                <div className="svc-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 auto-rows-fr">
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
@@ -114,7 +114,7 @@ const ServicesPreview = () => {
                                         {service.title}
                                     </h4>
                                 </div>
-                                <p className="text-secondary-500 text-base leading-relaxed font-light">
+                                <p className="text-black text-lg leading-relaxed font-light">
                                     {service.description}
                                 </p>
                             </Link>

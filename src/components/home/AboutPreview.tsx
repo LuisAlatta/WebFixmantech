@@ -27,7 +27,7 @@ const AboutPreview = () => {
                             <img
                                 src="/nuevas imagenes/IMAGEN 004.png"
                                 alt="Tecnología Industrial"
-                                className="w-full h-full object-cover aspect-[5/4] hover:scale-110 transition-transform duration-[1.5s]"
+                                className="w-full h-full object-cover aspect-[3/4] hover:scale-110 transition-transform duration-[1.5s]"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
                         </div>
