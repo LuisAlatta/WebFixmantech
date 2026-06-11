@@ -61,3 +61,10 @@
     text-shadow: 0 0 20px rgba(178, 28, 28, 0.4);
   }
 }
+
+/* Negrita general en textos (en evaluación; revertir este bloque si no convence) */
+.font-light,
+.font-normal,
+.font-medium {
+  font-weight: 700 !important;
+}

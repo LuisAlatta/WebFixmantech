@@ -1,27 +1,12 @@
 import { motion } from 'framer-motion';
-import { Target, Eye, Award, Users } from 'lucide-react';
+import { Target, Eye, Award, Users, ShieldCheck, Handshake } from 'lucide-react';
 import { clientLogos } from '../data/clients';
 
-// Specialized Shield Icon (Moved up for hoisting/reference safety)
-const ShieldIcon = ({ className }: { className?: string }) => (
-    <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className={className}
-    >
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-    </svg>
-);
-
 const values = [
-    { icon: <Award className="w-8 h-8" />, title: 'Excelencia', desc: 'Buscamos la perfección técnica en cada detalle operativo.' },
-    { icon: <Users className="w-8 h-8" />, title: 'Compromiso', desc: 'Su éxito operativo es la medida de nuestro desempeño.' },
-    { icon: <Target className="w-8 h-8" />, title: 'Innovación', desc: 'Implementamos tecnología de vanguardia en procesos.' },
-    { icon: <ShieldIcon className="w-8 h-8" />, title: 'Seguridad', desc: 'Cero Riesgos: Nuestra prioridad absoluta en campo.' }
+    { icon: <Award className="w-8 h-8" />, title: 'Excelencia', desc: 'Años de trayectoria en soluciones industriales.' },
+    { icon: <Users className="w-8 h-8" />, title: 'Compromiso', desc: 'Con nuestros clientes en cada proyecto.' },
+    { icon: <ShieldCheck className="w-8 h-8" />, title: 'Calidad', desc: 'Estándares altos en cada solución que entregamos.' },
+    { icon: <Handshake className="w-8 h-8" />, title: 'Integridad', desc: 'Construimos relaciones de confianza y largo plazo.' }
 ];
 
 const AboutPage = () => {

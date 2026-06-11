@@ -37,7 +37,7 @@ const Navbar = () => {
                         <img
                             src="/nuevas imagenes/logotopbar.png"
                             alt="FIXMANTECH Logo"
-                            className="h-12 md:h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105"
+                            className="h-8 md:h-10 w-auto object-contain transition-all duration-300 group-hover:scale-105"
                         />
                     </Link>
 

@@ -17,14 +17,14 @@ const Hero = () => {
                 />
             </div>
 
-            {/* Overlay corporate logo (top-right, only on hero) */}
+            {/* Overlay corporate logo (top-left, only on hero) */}
             <motion.img
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
                 src="/nuevas imagenes/logocompletosinfondo.png"
                 alt="FIXMANTECH"
-                className="absolute top-24 right-6 md:right-12 z-20 w-32 md:w-52 h-auto object-contain pointer-events-none drop-shadow-xl"
+                className="absolute top-24 left-6 md:left-12 z-20 w-24 md:w-36 h-auto object-contain pointer-events-none drop-shadow-xl"
             />
 
             {/* Content */}
