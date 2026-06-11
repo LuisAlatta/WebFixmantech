@@ -6,17 +6,9 @@ const Footer = () => {
     return (
         <footer className="bg-secondary-900 text-white pt-16 pb-8">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-12">
-                    {/* Brand Info */}
-                    <div>
-
-                        <p className="text-secondary-400 text-lg leading-relaxed mb-6">
-                            Soluciones integrales de ingeniería y servicios técnicos especializados. Calidad y profesionalismo en cada proyecto.
-                        </p>
-                    </div>
-
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 mb-12">
                     {/* Quick Links */}
-                    <div>
+                    <div className="lg:col-span-2">
                         <h3 className="text-2xl font-semibold mb-6">Enlaces Rápidos</h3>
                         <ul className="space-y-4 text-lg">
                             <li>
@@ -38,32 +30,32 @@ const Footer = () => {
                     </div>
 
                     {/* Services */}
-                    <div>
+                    <div className="lg:col-span-3">
                         <h3 className="text-2xl font-semibold mb-6">Servicios</h3>
                         <ul className="space-y-4 text-secondary-400 text-lg">
                             <li>
                                 <Link to="/servicios" className="hover:text-primary-400 transition-colors">
-                                    Fabricación y Revestimiento de Chutes de Transferencia
+                                    Revestimiento de Chutes
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/servicios" className="hover:text-primary-400 transition-colors">
-                                    Sistemas de Supresión de Polvo de Alta Tecnología
+                                    Supresión de Polvo
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/servicios" className="hover:text-primary-400 transition-colors">
-                                    Suministro y Mantenimiento de Colectores de Polvo
+                                    Colectores de Polvo
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/servicios" className="hover:text-primary-400 transition-colors">
-                                    Mantenimiento de Plantas Concentradoras
+                                    Mantenimiento de Plantas
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/servicios" className="hover:text-primary-400 transition-colors">
-                                    Fabricación de Estructuras Metálicas
+                                    Estructuras Metálicas
                                 </Link>
                             </li>
                             <li>
@@ -75,23 +67,23 @@ const Footer = () => {
                     </div>
 
                     {/* Contact Info */}
-                    <div>
+                    <div className="lg:col-span-3">
                         <h3 className="text-2xl font-semibold mb-6">Contacto</h3>
-                        <ul className="space-y-4 text-lg">
+                        <ul className="space-y-4 text-base">
                             <li className="flex items-start gap-3">
-                                <MapPin className="text-primary-400 shrink-0 mt-1" size={20} />
-                                <span className="text-secondary-400">PP.JJ. JOSE SANTOS ATAHUALPA Mz T Lote 06</span>
-                                <span className="text-secondary-400">Cerro Colorado, Arequipa, Perú</span>
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <Phone className="text-primary-400 shrink-0 mt-1" size={20} />
-                                <div className="text-secondary-400">
-                                    <p>+51 996 087 437</p>
+                                <MapPin className="text-primary-400 shrink-0 mt-0.5" size={20} />
+                                <div className="text-secondary-400 leading-relaxed">
+                                    <p>PP.JJ. José Santos Atahualpa Mz T Lote 06</p>
+                                    <p>Cerro Colorado, Arequipa, Perú</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
-                                <Mail className="text-primary-400 shrink-0 mt-1" size={20} />
-                                <div className="text-secondary-400">
+                                <Phone className="text-primary-400 shrink-0 mt-0.5" size={20} />
+                                <p className="text-secondary-400">+51 996 087 437</p>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <Mail className="text-primary-400 shrink-0 mt-0.5" size={20} />
+                                <div className="text-secondary-400 break-all leading-relaxed">
                                     <p>gerencia_ventas@fixmantech.com</p>
                                     <p>operaciones@fixmantech.com</p>
                                     <p>ventas@fixmantech.com</p>
@@ -101,9 +93,9 @@ const Footer = () => {
                     </div>
 
                     {/* Trusted Clients */}
-                    <div className="md:col-span-2 lg:col-span-2">
+                    <div className="md:col-span-2 lg:col-span-4">
                         <h3 className="text-2xl font-semibold mb-6">Confían en Nosotros</h3>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <div className="grid grid-cols-3 gap-4">
                             {clientLogos.map((logo) => (
                                 <div key={logo.alt} className="bg-white rounded-xl p-4 flex items-center justify-center aspect-[3/2] shadow-sm">
                                     <img
