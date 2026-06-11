@@ -10,21 +10,21 @@ const Footer = () => {
                     {/* Quick Links */}
                     <div className="lg:col-span-2">
                         <h3 className="text-3xl font-semibold mb-6">Enlaces Rápidos</h3>
-                        <ul className="space-y-4 text-xl">
+                        <ul className="space-y-4 text-2xl font-bold">
                             <li>
-                                <Link to="/" className="text-secondary-400 hover:text-primary-400 transition-colors">Inicio</Link>
+                                <Link to="/" className="text-white hover:text-primary-400 transition-colors">Inicio</Link>
                             </li>
                             <li>
-                                <Link to="/nosotros" className="text-secondary-400 hover:text-primary-400 transition-colors">Nosotros</Link>
+                                <Link to="/nosotros" className="text-white hover:text-primary-400 transition-colors">Nosotros</Link>
                             </li>
                             <li>
-                                <Link to="/servicios" className="text-secondary-400 hover:text-primary-400 transition-colors">Servicios</Link>
+                                <Link to="/servicios" className="text-white hover:text-primary-400 transition-colors">Servicios</Link>
                             </li>
                             <li>
-                                <Link to="/productos" className="text-secondary-400 hover:text-primary-400 transition-colors">Productos</Link>
+                                <Link to="/productos" className="text-white hover:text-primary-400 transition-colors">Productos</Link>
                             </li>
                             <li>
-                                <Link to="/contactenos" className="text-secondary-400 hover:text-primary-400 transition-colors">Contáctenos</Link>
+                                <Link to="/contactenos" className="text-white hover:text-primary-400 transition-colors">Contáctenos</Link>
                             </li>
                         </ul>
                     </div>
@@ -32,7 +32,7 @@ const Footer = () => {
                     {/* Services */}
                     <div className="lg:col-span-3">
                         <h3 className="text-3xl font-semibold mb-6">Servicios</h3>
-                        <ul className="space-y-4 text-secondary-400 text-xl">
+                        <ul className="space-y-4 text-white text-2xl font-bold">
                             <li>
                                 <Link to="/servicios" className="hover:text-primary-400 transition-colors">
                                     Revestimiento de Chutes
@@ -69,21 +69,21 @@ const Footer = () => {
                     {/* Contact Info */}
                     <div className="lg:col-span-3">
                         <h3 className="text-3xl font-semibold mb-6">Contacto</h3>
-                        <ul className="space-y-4 text-lg">
+                        <ul className="space-y-4 text-xl font-bold">
                             <li className="flex items-start gap-3">
-                                <MapPin className="text-primary-400 shrink-0 mt-0.5" size={20} />
-                                <div className="text-secondary-400 leading-relaxed">
+                                <MapPin className="text-primary-400 shrink-0 mt-0.5" size={22} />
+                                <div className="text-white leading-relaxed">
                                     <p>PP.JJ. José Santos Atahualpa Mz T Lote 06</p>
                                     <p>Cerro Colorado, Arequipa, Perú</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
-                                <Phone className="text-primary-400 shrink-0 mt-0.5" size={20} />
-                                <p className="text-secondary-400">+51 996 087 437</p>
+                                <Phone className="text-primary-400 shrink-0 mt-0.5" size={22} />
+                                <p className="text-white">+51 996 087 437</p>
                             </li>
                             <li className="flex items-start gap-3">
-                                <Mail className="text-primary-400 shrink-0 mt-0.5" size={20} />
-                                <div className="text-secondary-400 break-all leading-relaxed">
+                                <Mail className="text-primary-400 shrink-0 mt-0.5" size={22} />
+                                <div className="text-white break-all leading-relaxed">
                                     <p>gerencia_ventas@fixmantech.com</p>
                                     <p>operaciones@fixmantech.com</p>
                                     <p>ventas@fixmantech.com</p>
