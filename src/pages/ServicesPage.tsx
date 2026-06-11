@@ -23,6 +23,7 @@ interface Service {
     title: string;
     image: string;
     modalImage: string;
+    modalImages?: string[];
     icon: React.ReactNode;
     content: ContentBlock[];
 }
@@ -92,6 +93,7 @@ const services: Service[] = [
         title: 'MANTENIMIENTO DE PLANTAS CONCENTRADORAS',
         image: '/nuevas imagenes/IMAGEN 012 MANTO PLANTAS.png',
         modalImage: '/nuevas imagenes/IMAGEN 013 MANTO PLANTAS.png',
+        modalImages: ['/nuevas imagenes/IMAGEN 013 MANTO PLANTAS.png', '/nuevas imagenes/IMAGEN 14.png'],
         icon: <Settings />,
         content: [
             {
@@ -253,67 +255,76 @@ const ServicesPage = () => {
                             initial={{ opacity: 0, y: 50, scale: 0.9 }}
                             animate={{ opacity: 1, y: 0, scale: 1 }}
                             exit={{ opacity: 0, y: 50, scale: 0.9 }}
-                            className="bg-white w-full max-w-6xl max-h-[90vh] overflow-y-auto rounded-[4rem] shadow-2xl relative z-10 overflow-hidden flex flex-col"
+                            className="bg-white w-full max-w-7xl max-h-[90vh] rounded-[2.5rem] shadow-2xl relative z-10 overflow-hidden flex flex-col"
                         >
-                            <div className="flex flex-col lg:flex-row h-full">
+                            <div className="flex flex-col lg:flex-row lg:h-[90vh] lg:max-h-[840px]">
                                 {/* Image Column */}
-                                <div className="w-full lg:w-1/2 h-80 lg:h-auto relative">
-                                    <img
-                                        src={selectedService.modalImage}
-                                        alt={selectedService.title}
-                                        className="w-full h-full object-cover"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-secondary-900 via-transparent lg:bg-gradient-to-r" />
+                                <div className="w-full lg:w-1/2 h-72 lg:h-full relative shrink-0">
+                                    {selectedService.modalImages ? (
+                                        <div className="flex flex-col h-full">
+                                            {selectedService.modalImages.map((src, i) => (
+                                                <img
+                                                    key={i}
+                                                    src={src}
+                                                    alt={selectedService.title}
+                                                    className="w-full h-1/2 object-cover"
+                                                />
+                                            ))}
+                                        </div>
+                                    ) : (
+                                        <img
+                                            src={selectedService.modalImage}
+                                            alt={selectedService.title}
+                                            className="w-full h-full object-cover"
+                                        />
+                                    )}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-secondary-900/60 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-secondary-900/10 pointer-events-none" />
                                     <button
                                         onClick={() => setSelectedService(null)}
-                                        className="absolute top-8 left-8 p-4 bg-white/10 hover:bg-white/30 rounded-full text-white backdrop-blur-lg border border-white/20 transition-all"
+                                        className="absolute top-6 left-6 p-3 bg-white/10 hover:bg-white/30 rounded-full text-white backdrop-blur-lg border border-white/20 transition-all"
                                     >
-                                        <X size={24} />
+                                        <X size={22} />
                                     </button>
                                 </div>
 
                                 {/* Content Column */}
-                                <div className="w-full lg:w-1/2 p-10 lg:p-20 overflow-y-auto">
+                                <div className="w-full lg:w-1/2 p-6 lg:p-8 overflow-y-auto flex flex-col justify-center">
 
-                                    <h2 className="text-4xl lg:text-5xl font-[900] text-secondary-900 mb-8 leading-none uppercase tracking-tighter text-balance">
+                                    <h2 className="text-2xl lg:text-3xl xl:text-4xl font-[900] text-secondary-900 mb-4 leading-tight uppercase tracking-tight text-balance">
                                         {selectedService.title}
                                     </h2>
 
-                                    <div className="space-y-8 mb-12">
+                                    <div className="space-y-3 mb-5">
                                         {selectedService.content.map((block, idx) => (
-                                            <div key={idx} className="animate-in fade-in slide-in-from-bottom-4 duration-500" style={{ animationDelay: `${idx * 100}ms` }}>
+                                            <div key={idx}>
                                                 {block.type === 'section' && (
-                                                    <div className="mb-6">
-                                                        <h3 className="text-primary-600 font-black text-sm uppercase tracking-widest mb-4 border-l-4 border-primary-500 pl-4">
+                                                    <div>
+                                                        <h3 className="text-primary-600 font-black text-xs uppercase tracking-widest mb-2.5 border-l-4 border-primary-500 pl-3">
                                                             {block.title}
                                                         </h3>
-                                                        <div className="space-y-3">
+                                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
                                                             {block.items?.map((item, i) => (
-                                                                <div key={i} className="flex items-start gap-4 group">
-                                                                    <div className="mt-1 p-0.5 bg-primary-50 text-primary-600 rounded-full group-hover:bg-primary-600 group-hover:text-white transition-colors">
-                                                                        <CheckCircle2 size={16} />
-                                                                    </div>
-                                                                    <p className="text-lg text-secondary-600 font-light leading-relaxed">{item}</p>
+                                                                <div key={i} className="flex items-start gap-2.5 group">
+                                                                    <CheckCircle2 size={16} className="text-primary-600 shrink-0 mt-0.5" />
+                                                                    <p className="text-sm text-secondary-600 leading-snug">{item}</p>
                                                                 </div>
                                                             ))}
                                                         </div>
                                                     </div>
                                                 )}
                                                 {block.type === 'list' && (
-                                                    <div className="space-y-4">
+                                                    <div className="space-y-2">
                                                         {block.items?.map((item, i) => (
-                                                            <div key={i} className="flex items-start gap-4 group">
-                                                                <div className="mt-1.5 p-1 bg-primary-50 text-primary-600 rounded-full group-hover:bg-primary-600 group-hover:text-white transition-colors">
-                                                                    <CheckCircle2 size={18} />
-                                                                </div>
-                                                                <p className="text-xl text-secondary-600 font-light leading-relaxed italic">{item}</p>
+                                                            <div key={i} className="flex items-start gap-3 group">
+                                                                <CheckCircle2 size={17} className="text-primary-600 shrink-0 mt-0.5" />
+                                                                <p className="text-[15px] text-secondary-700 leading-snug">{item}</p>
                                                             </div>
                                                         ))}
                                                     </div>
                                                 )}
                                                 {block.type === 'paragraph' && (
-                                                    <div className="bg-secondary-50 p-8 lg:p-10 rounded-[2.5rem] border border-secondary-100 shadow-inner">
-                                                        <p className="text-lg text-secondary-900 font-bold leading-relaxed">{block.text}</p>
+                                                    <div className="bg-secondary-50 p-5 rounded-2xl border border-secondary-100 shadow-inner">
+                                                        <p className="text-sm text-secondary-900 leading-relaxed">{block.text}</p>
                                                     </div>
                                                 )}
                                             </div>
@@ -322,9 +333,9 @@ const ServicesPage = () => {
 
                                     <a
                                         href="https://wa.me/51996087437"
-                                        className="inline-flex items-center gap-4 py-5 px-12 bg-secondary-900 text-white rounded-full font-black uppercase tracking-widest text-xs hover:bg-primary-600 transition-all shadow-xl active:scale-95"
+                                        className="inline-flex items-center gap-3 py-4 px-10 bg-secondary-900 text-white rounded-full font-black uppercase tracking-widest text-xs hover:bg-primary-600 transition-all shadow-xl active:scale-95 self-start"
                                     >
-                                        Consultar Proyecto Especial <ArrowRight size={20} />
+                                        Consultar Proyecto Especial <ArrowRight size={18} />
                                     </a>
                                 </div>
                             </div>

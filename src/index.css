@@ -68,3 +68,27 @@
 .font-medium {
   font-weight: 700 !important;
 }
+
+/* Scrollbar moderno e integrado (toda la app y modales) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(178, 28, 28, 0.55) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(178, 28, 28, 0.55);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(178, 28, 28, 0.85);
+}
