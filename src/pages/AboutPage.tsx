@@ -28,7 +28,7 @@ const AboutPage = () => {
                         <h1 className="text-6xl md:text-8xl font-[900] mb-8 tracking-tighter uppercase leading-none">
                             Ingeniería que <span className="text-primary-500">Trasciende</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-secondary-300 max-w-3xl mx-auto font-light leading-relaxed">
+                        <p className="text-2xl md:text-3xl text-white max-w-3xl mx-auto font-light leading-relaxed">
                             Más de una década consolidando la confianza de los gigantes industriales del Perú.
                         </p>
                     </motion.div>

@@ -16,7 +16,7 @@ const ContactPage = () => {
                         <h1 className="text-5xl md:text-7xl font-[900] mb-6 tracking-tighter uppercase leading-none">
                             Conecte con <span className="text-primary-500">Expertos</span>
                         </h1>
-                        <p className="text-xl text-secondary-300 max-w-2xl mx-auto font-light leading-relaxed">
+                        <p className="text-2xl md:text-3xl text-white max-w-2xl mx-auto font-light leading-relaxed">
                             Nuestra central de ingeniería está disponible para evaluar sus proyectos de mayor envergadura.
                         </p>
                     </motion.div>

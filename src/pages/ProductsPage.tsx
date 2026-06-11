@@ -236,7 +236,7 @@ const ProductsPage = () => {
                         <h1 className="text-5xl md:text-7xl font-[900] mb-6 tracking-tighter uppercase">
                             Alta <span className="text-primary-500">Tecnología</span> Industrial
                         </h1>
-                        <p className="text-xl text-secondary-300 max-w-2xl mx-auto font-light leading-relaxed">
+                        <p className="text-2xl md:text-3xl text-white max-w-2xl mx-auto font-light leading-relaxed">
                             Componentes y consumibles de alto rendimiento diseñados para extender la vida útil de sus equipos.
                         </p>
                     </motion.div>
