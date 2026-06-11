@@ -171,11 +171,11 @@ const AboutPage = () => {
                             <div className="bg-white p-12 rounded-[3rem] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.15)] border-4 border-secondary-50 max-w-5xl mx-auto">
                                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 items-center">
                                     {clientLogos.map((logo) => (
-                                        <div key={logo.alt} className="flex items-center justify-center h-24 grayscale hover:grayscale-0 transition-all duration-500">
+                                        <div key={logo.alt} className="flex items-center justify-center h-24 overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
                                             <img
                                                 src={logo.src}
                                                 alt={logo.alt}
-                                                className="max-w-full max-h-full object-contain"
+                                                className={`max-w-full max-h-full object-contain ${logo.scale ?? ''}`}
                                             />
                                         </div>
                                     ))}
