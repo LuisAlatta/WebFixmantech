@@ -1,25 +1,52 @@
 import { motion } from 'framer-motion';
-import { Shield, Wrench, Settings, Hammer, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const services = [
+interface Service {
+    icon: string;
+    title: string;
+    description: string;
+}
+
+// Order and content per client correction (PDF pág. 2). Icons are numbered 1-8.
+const services: Service[] = [
     {
-        icon: <Shield />,
+        icon: '/nuevas imagenes/iconos servicios/1.png',
+        title: 'Fabricación de Estructuras Metálicas en General',
+        description: 'Diseño, fabricación y montaje de estructuras metálicas para los sectores minero e industrial, cumpliendo altos estándares de calidad, seguridad y precisión.'
+    },
+    {
+        icon: '/nuevas imagenes/iconos servicios/2.png',
+        title: 'Fabricación y Mantenimiento de Chutes de Transferencia',
+        description: 'Fabricación de chutes de transferencia personalizados para minería e industria, utilizando aceros antidesgaste y revestimientos especializados.'
+    },
+    {
+        icon: '/nuevas imagenes/iconos servicios/3.png',
         title: 'Revestimiento de Chutes',
         description: 'Diseño y fabricación con acero A36 y revestido con plancha de acero manganeso.'
     },
     {
-        icon: <Wrench />,
-        title: 'Tanques y Ductos',
+        icon: '/nuevas imagenes/iconos servicios/4.png',
+        title: 'Suministro y Mantenimiento de Colectores de Polvo',
+        description: 'Filtros de mangas de alta calidad, diseñados para máxima eficiencia de filtración y larga vida útil.'
+    },
+    {
+        icon: '/nuevas imagenes/iconos servicios/5.png',
+        title: 'Instalación de Sistemas Contra Polución',
+        description: 'Supresión de polvo mediante niebla seca de alta eficiencia.'
+    },
+    {
+        icon: '/nuevas imagenes/iconos servicios/6.png',
+        title: 'Fabricación de Tanques y Ductos',
         description: 'Fabricación especializada en acero inoxidable y A36 para diversas industrias.'
     },
     {
-        icon: <Hammer />,
+        icon: '/nuevas imagenes/iconos servicios/7.png',
         title: 'Reparación de Tolvas',
         description: 'Mantenimiento parcial y total de tolvas CAT y KOMATSU con personal homologado.'
     },
     {
-        icon: <Settings />,
+        icon: '/nuevas imagenes/iconos servicios/8.png',
         title: 'Mantenimiento de Plantas',
         description: 'Servicio preventivo y correctivo asegurando operación continua y segura.'
     }
@@ -27,9 +54,17 @@ const services = [
 
 const ServicesPreview = () => {
     return (
-        <section className="py-24 bg-primary-50 relative overflow-hidden">
-            {/* Background elements */}
-            <div className="absolute top-0 right-0 w-1/3 h-full bg-white skew-x-12 transform translate-x-1/2" />
+        <section className="py-24 relative overflow-hidden bg-secondary-950">
+            {/* Section background image (IMAGEN 003) with dark overlay for contrast */}
+            <div className="absolute inset-0 z-0">
+                <img
+                    src="/nuevas imagenes/IMAGEN 003.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-secondary-950/90 via-secondary-950/80 to-secondary-950/90" />
+            </div>
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
@@ -40,11 +75,8 @@ const ServicesPreview = () => {
                         transition={{ duration: 0.8 }}
                         className="max-w-2xl"
                     >
-                        <h2 className="text-primary-600 font-black uppercase tracking-[0.3em] text-xs mb-4">Especialidades</h2>
-                        <h3 className="text-4xl md:text-5xl font-[900] text-secondary-900 tracking-tight mb-6 uppercase">Expertos en <span className="text-primary-500 underline decoration-8 underline-offset-8">Alta Ingeniería</span></h3>
-                        <p className="text-secondary-600 text-xl font-light leading-relaxed">
-                            Proporcionamos soluciones técnicas que extienden drásticamente la vida útil de sus activos industriales.
-                        </p>
+                        <h2 className="text-primary-400 font-black uppercase tracking-[0.3em] text-sm mb-4">Especialidades</h2>
+                        <h3 className="text-5xl md:text-6xl font-[900] text-white tracking-tight mb-6 uppercase">Expertos en <span className="text-primary-500 underline decoration-8 underline-offset-8">Alta Ingeniería</span></h3>
                     </motion.div>
 
                     <motion.div
@@ -52,12 +84,19 @@ const ServicesPreview = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
+                        className="max-w-xl"
                     >
+                        <h4 className="text-3xl md:text-4xl font-[900] text-white uppercase tracking-tight leading-tight mb-5">
+                            Soluciones de Alto Valor para la <span className="text-primary-500">Industria Minera</span>
+                        </h4>
+                        <p className="text-secondary-200 text-xl font-light leading-relaxed mb-6">
+                            Contribuimos a la continuidad operativa mediante servicios de ingeniería, mantenimiento y fabricación metalmecánica <span className="font-bold text-white">especializada</span>.
+                        </p>
                         <Link
                             to="/servicios"
-                            className="group flex items-center gap-4 text-secondary-900 font-black tracking-widest text-xs uppercase hover:text-primary-600 transition-colors"
+                            className="group inline-flex items-center gap-4 text-white font-black tracking-widest text-sm uppercase hover:text-primary-400 transition-colors"
                         >
-                            Ver Portafolio Completo <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:bg-primary-600 group-hover:text-white transition-all"><ArrowRight className="w-5 h-5" /></div>
+                            Ver Portafolio Completo <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:bg-primary-600 group-hover:text-white text-secondary-900 transition-all"><ArrowRight className="w-5 h-5" /></div>
                         </Link>
                     </motion.div>
                 </div>
@@ -69,19 +108,23 @@ const ServicesPreview = () => {
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: index * 0.1 }}
+                            transition={{ duration: 0.6, delay: index * 0.08 }}
                             whileHover={{ y: -15 }}
-                            className="bg-white p-10 rounded-[2.5rem] shadow-xl hover:shadow-2xl hover:shadow-primary-500/10 transition-all group border border-transparent hover:border-primary-100"
                         >
-                            <div className="w-16 h-16 bg-secondary-50 text-primary-500 rounded-2xl flex items-center justify-center mb-10 group-hover:bg-primary-600 group-hover:text-white transition-all duration-500 shadow-inner">
-                                <div className="scale-125">{service.icon}</div>
-                            </div>
-                            <h4 className="text-xl font-black mb-4 tracking-tight text-secondary-900 uppercase leading-none group-hover:text-primary-600 transition-colors">
-                                {service.title}
-                            </h4>
-                            <p className="text-secondary-500 text-sm leading-relaxed font-light">
-                                {service.description}
-                            </p>
+                            <Link
+                                to="/servicios"
+                                className="flex flex-col h-full bg-white p-10 rounded-[2.5rem] shadow-xl hover:shadow-2xl hover:shadow-primary-500/20 transition-all group border border-transparent hover:border-primary-100"
+                            >
+                                <div className="w-20 h-20 bg-secondary-50 rounded-2xl flex items-center justify-center mb-10 group-hover:scale-110 transition-transform duration-500 shadow-inner p-3">
+                                    <img src={service.icon} alt="" aria-hidden="true" className="w-full h-full object-contain" />
+                                </div>
+                                <h4 className="text-xl font-black mb-4 tracking-tight text-secondary-900 uppercase leading-tight group-hover:text-primary-600 transition-colors">
+                                    {service.title}
+                                </h4>
+                                <p className="text-secondary-500 text-base leading-relaxed font-light">
+                                    {service.description}
+                                </p>
+                            </Link>
                         </motion.div>
                     ))}
                 </div>

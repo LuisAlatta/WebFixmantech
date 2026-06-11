@@ -26,7 +26,7 @@ const CTA = () => {
                     <h2 className="text-4xl md:text-7xl font-[900] text-secondary-900 mb-8 tracking-tighter uppercase leading-none">
                         ¿Listo para <span className="text-primary-500">Optimizar</span> su Industria?
                     </h2>
-                    <p className="text-secondary-600 text-xl md:text-2xl mb-12 max-w-2xl mx-auto leading-relaxed font-light">
+                    <p className="text-secondary-600 text-2xl md:text-3xl mb-12 max-w-3xl mx-auto leading-relaxed font-light">
                         Contáctenos hoy mismo y descubra por qué somos el socio estratégico número uno en el sur del país.
                     </p>
 

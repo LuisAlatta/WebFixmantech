@@ -25,7 +25,7 @@ const AboutPreview = () => {
                     >
                         <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-8 border-secondary-50">
                             <img
-                                src="/images/about_bright_fixed.png"
+                                src="/nuevas imagenes/IMAGEN 004.png"
                                 alt="Tecnología Industrial"
                                 className="w-full h-full object-cover aspect-[4/3] hover:scale-110 transition-transform duration-[1.5s]"
                             />
@@ -60,10 +60,10 @@ const AboutPreview = () => {
                             className="h-1.5 bg-primary-500 mb-6"
                         />
                         <h2 className="text-primary-600 font-black uppercase tracking-[0.2em] text-sm mb-4">Eficiencia Garantizada</h2>
-                        <h3 className="text-4xl md:text-5xl font-[900] text-secondary-900 mb-8 leading-[1.1] tracking-tight">
+                        <h3 className="text-5xl md:text-6xl font-[900] text-secondary-900 mb-8 leading-[1.1] tracking-tight">
                             Su Socio Estratégico en <span className="text-primary-500">Soluciones Industriales</span>
                         </h3>
-                        <p className="text-xl text-secondary-600 mb-10 leading-relaxed font-light">
+                        <p className="text-2xl text-secondary-600 mb-10 leading-relaxed font-light">
                             En FIXMANTECH, transformamos desafíos complejos en soluciones de ingeniería de precisión.
                             Nuestro compromiso trasciende el mantenimiento: optimizamos su infraestructura con tecnología de punta.
                         </p>
@@ -81,7 +81,7 @@ const AboutPreview = () => {
                                     <div className="bg-white p-2 rounded-full shadow-sm group-hover:bg-primary-500 group-hover:text-white transition-colors">
                                         <CheckCircle size={20} />
                                     </div>
-                                    <span className="text-secondary-800 font-bold text-sm tracking-tight">{benefit}</span>
+                                    <span className="text-secondary-800 font-bold text-base tracking-tight">{benefit}</span>
                                 </motion.div>
                             ))}
                         </div>

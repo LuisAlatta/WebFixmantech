@@ -11,11 +11,21 @@ const Hero = () => {
                     initial={{ scale: 1.1, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
-                    src="/images/hero_bright_fixed.png"
+                    src="/nuevas imagenes/IMAGEN 001.png"
                     alt="Modern Industrial Facility"
                     className="w-full h-full object-cover"
                 />
             </div>
+
+            {/* Overlay corporate logo (top-right, only on hero) */}
+            <motion.img
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+                src="/nuevas imagenes/logocompletosinfondo.png"
+                alt="FIXMANTECH"
+                className="absolute top-24 right-6 md:right-12 z-20 w-32 md:w-52 h-auto object-contain pointer-events-none drop-shadow-xl"
+            />
 
             {/* Content */}
             <div className="container mx-auto px-4 z-10 relative">
@@ -26,13 +36,13 @@ const Hero = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
-                        <h2 className="text-primary-600 font-black text-lg mb-4 uppercase tracking-[0.2em]">
+                        <h2 className="text-primary-600 font-black text-xl md:text-2xl mb-4 uppercase tracking-[0.2em]">
                             Ingeniería y Servicios Técnicos
                         </h2>
-                        <h1 className="text-5xl md:text-7xl font-[900] text-secondary-900 mb-6 leading-tight tracking-tighter">
+                        <h1 className="text-6xl md:text-8xl font-[900] text-secondary-900 mb-6 leading-tight tracking-tighter">
                             Soluciones Integrales para su <span className="text-primary-500">Industria</span>
                         </h1>
-                        <p className="text-xl text-secondary-900 mb-8 leading-relaxed max-w-2xl font-light">
+                        <p className="text-2xl md:text-3xl text-secondary-900 mb-8 leading-relaxed max-w-2xl font-light">
                             Especialistas en mantenimiento industrial, instalaciones eléctricas y proyectos de ingeniería.
                             Garantizamos eficiencia, seguridad y calidad superior.
                         </p>

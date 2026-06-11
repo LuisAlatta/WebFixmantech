@@ -35,9 +35,9 @@ const Navbar = () => {
                     {/* Logo */}
                     <Link to="/" className="flex items-center group">
                         <img
-                            src="/images/logo_fixmantech.png"
+                            src="/nuevas imagenes/logotopbar.png"
                             alt="FIXMANTECH Logo"
-                            className="h-10 md:h-12 w-auto object-contain transition-all duration-300 group-hover:scale-105"
+                            className="h-12 md:h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105"
                         />
                     </Link>
 
@@ -48,7 +48,7 @@ const Navbar = () => {
                                 key={link.path}
                                 to={link.path}
                                 className={({ isActive }) =>
-                                    `text-xs font-black uppercase tracking-[0.2em] transition-all duration-300 hover:text-secondary-900 border-b-2 ${isActive
+                                    `text-sm font-black uppercase tracking-[0.2em] transition-all duration-300 hover:text-secondary-900 border-b-2 ${isActive
                                         ? 'text-primary-600 border-primary-500'
                                         : 'text-primary-500 border-transparent hover:border-primary-200'
                                     }`
@@ -63,7 +63,7 @@ const Navbar = () => {
                             href="https://wa.me/51996087437"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-8 py-3 bg-secondary-900 text-white text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-primary-600 transition-all shadow-xl shadow-secondary-900/10"
+                            className="px-8 py-3 bg-secondary-900 text-white text-xs font-black uppercase tracking-widest rounded-full hover:bg-primary-600 transition-all shadow-xl shadow-secondary-900/10"
                         >
                             Cotizar Ahora
                         </motion.a>
