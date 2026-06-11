@@ -86,8 +86,9 @@ header * {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
 }
 
-/* Sombra más tenue en el contenido inferior del inicio (debajo de la sección de imagen) */
-.home-lower * {
+/* Sombra más tenue en el contenido inferior de las páginas (debajo del módulo inicial) */
+.home-lower *,
+.page-lower * {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
 }
 

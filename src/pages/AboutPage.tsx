@@ -36,7 +36,7 @@ const AboutPage = () => {
             </div>
 
             {/* Content Section - The Story */}
-            <div className="container mx-auto px-4 py-32">
+            <div className="page-lower container mx-auto px-4 py-32">
                 <div className="flex flex-col lg:flex-row gap-24 items-center mb-40">
                     <motion.div
                         initial={{ opacity: 0, x: -60 }}
@@ -50,7 +50,7 @@ const AboutPage = () => {
                         <h3 className="text-5xl font-[900] text-secondary-900 mb-10 leading-tight tracking-tight uppercase">
                             Décadas de Experiencia en <span className="text-primary-500">Mantenimiento mecánico </span>
                         </h3>
-                        <div className="space-y-6 text-2xl text-secondary-600 font-light leading-relaxed text-justify">
+                        <div className="space-y-6 text-2xl text-black font-light leading-relaxed text-justify">
                             <p>
                                 <span className="font-bold text-secondary-900">FIXMANTECH S.A.C.</span> no solo es un proveedor de servicios; somos arquitectos de la continuidad operativa. Nacimos con la visión de elevar los estándares de ingeniería en el país.
                             </p>
@@ -148,7 +148,7 @@ const AboutPage = () => {
                                     {value.icon}
                                 </div>
                                 <h4 className="text-3xl font-[900] text-secondary-900 mb-4 tracking-tight uppercase leading-none">{value.title}</h4>
-                                <p className="text-lg text-secondary-500 font-light leading-snug px-4">{value.desc}</p>
+                                <p className="text-lg text-black font-light leading-snug px-4">{value.desc}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -165,7 +165,7 @@ const AboutPage = () => {
                             <h3 className="text-5xl font-[900] text-secondary-900 mb-12 uppercase tracking-tighter">
                                 Empresas que <span className="text-primary-500">Confían</span> en Nosotros
                             </h3>
-                            <p className="text-2xl text-secondary-600 font-light mb-16 max-w-3xl mx-auto">
+                            <p className="text-2xl text-black font-light mb-16 max-w-3xl mx-auto">
                                 Trabajamos con las empresas más importantes del sector industrial, brindando soluciones de ingeniería de clase mundial.
                             </p>
                             <div className="bg-white p-12 rounded-[3rem] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.15)] border-4 border-secondary-50 max-w-5xl mx-auto">

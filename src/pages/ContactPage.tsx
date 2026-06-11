@@ -23,7 +23,7 @@ const ContactPage = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 py-24">
+            <div className="page-lower container mx-auto px-4 py-24">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                         {/* Info Column */}
@@ -44,7 +44,7 @@ const ContactPage = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-black text-secondary-900 uppercase tracking-widest text-xs mb-2">Sede Central</h4>
-                                        <p className="text-lg text-secondary-600 font-light">Cerro Colorado, Arequipa, Perú</p>
+                                        <p className="text-lg text-black font-light">Cerro Colorado, Arequipa, Perú</p>
                                     </div>
                                 </div>
 
@@ -64,9 +64,9 @@ const ContactPage = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-black text-secondary-900 uppercase tracking-widest text-xs mb-2">Consultas Técnicas</h4>
-                                        <p className="text-lg text-secondary-600 font-medium">gerencia_ventas@fixmantech.com</p>
-                                        <p className="text-sm text-secondary-500">operaciones@fixmantech.com</p>
-                                        <p className="text-sm text-secondary-500">ventas@fixmantech.com</p>
+                                        <p className="text-lg text-black font-medium">gerencia_ventas@fixmantech.com</p>
+                                        <p className="text-sm text-black">operaciones@fixmantech.com</p>
+                                        <p className="text-sm text-black">ventas@fixmantech.com</p>
                                     </div>
                                 </div>
                             </div>

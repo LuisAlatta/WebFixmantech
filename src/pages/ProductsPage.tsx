@@ -243,7 +243,7 @@ const ProductsPage = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 py-24">
+            <div className="page-lower container mx-auto px-4 py-24">
                 {/* Category Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     {categories.map((category, index) => (
@@ -341,7 +341,7 @@ const ProductsPage = () => {
                                                     </div>
                                                     <div className="flex-grow">
                                                         <h4 className="text-xl font-black text-secondary-900 uppercase tracking-tight mb-1">{product.name}</h4>
-                                                        <p className="text-secondary-500 text-xs font-bold uppercase tracking-widest">Ver especificaciones técnicas</p>
+                                                        <p className="text-black text-xs font-bold uppercase tracking-widest">Ver especificaciones técnicas</p>
                                                     </div>
                                                     <div className="w-12 h-12 rounded-full bg-secondary-50 flex items-center justify-center text-secondary-300 group-hover:bg-primary-600 group-hover:text-white transition-all">
                                                         <ArrowRight size={20} />
@@ -399,7 +399,7 @@ const ProductsPage = () => {
                                                 transition={{ delay: idx * 0.1 }}
                                             >
                                                 {block.type === 'paragraph' && (
-                                                    <p className="text-xl text-secondary-600 font-light leading-relaxed border-l-4 border-secondary-100 pl-8 italic">
+                                                    <p className="text-xl text-black font-light leading-relaxed border-l-4 border-secondary-100 pl-8 italic">
                                                         {block.text}
                                                     </p>
                                                 )}
@@ -413,7 +413,7 @@ const ProductsPage = () => {
                                                             {block.items?.map((item, i) => (
                                                                 <div key={i} className="flex items-start gap-3">
                                                                     <CheckCircle2 size={16} className="text-primary-500 mt-1 shrink-0" />
-                                                                    <span className="text-secondary-800 font-medium tracking-tight leading-snug">{item}</span>
+                                                                    <span className="text-black font-medium tracking-tight leading-snug">{item}</span>
                                                                 </div>
                                                             ))}
                                                         </div>
@@ -437,7 +437,7 @@ const ProductsPage = () => {
 
                                     <div className="mt-16 pt-10 border-t border-secondary-100 flex flex-col sm:flex-row items-center justify-between gap-8">
                                         <div className="text-center sm:text-left">
-                                            <p className="text-secondary-400 text-xs font-black uppercase tracking-widest mb-1">¿Desea una oferta formal?</p>
+                                            <p className="text-black text-xs font-black uppercase tracking-widest mb-1">¿Desea una oferta formal?</p>
                                             <p className="text-secondary-900 font-bold">Solicite un presupuesto técnico hoy mismo.</p>
                                         </div>
                                         <a
