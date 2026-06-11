@@ -63,7 +63,7 @@ const AboutPreview = () => {
                         <h3 className="text-5xl md:text-6xl font-[900] text-secondary-900 mb-8 leading-[1.1] tracking-tight">
                             Su Socio Estratégico en <span className="text-primary-500">Soluciones Industriales</span>
                         </h3>
-                        <p className="text-2xl text-secondary-600 mb-10 leading-relaxed font-light">
+                        <p className="text-2xl text-black mb-10 leading-relaxed font-light">
                             En FIXMANTECH, transformamos desafíos complejos en soluciones de ingeniería de precisión.
                             Nuestro compromiso trasciende el mantenimiento: optimizamos su infraestructura con tecnología de punta.
                         </p>
@@ -81,7 +81,7 @@ const AboutPreview = () => {
                                     <div className="bg-white p-2 rounded-full shadow-sm group-hover:bg-primary-500 group-hover:text-white transition-colors">
                                         <CheckCircle size={20} />
                                     </div>
-                                    <span className="text-secondary-800 font-bold text-lg tracking-tight">{benefit}</span>
+                                    <span className="text-black font-bold text-lg tracking-tight">{benefit}</span>
                                 </motion.div>
                             ))}
                         </div>

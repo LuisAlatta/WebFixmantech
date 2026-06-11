@@ -8,8 +8,10 @@ const HomePage = () => {
         <div className="w-full">
             <Hero />
             <ServicesPreview />
-            <AboutPreview />
-            <CTA />
+            <div className="home-lower">
+                <AboutPreview />
+                <CTA />
+            </div>
         </div>
     );
 };

@@ -86,6 +86,11 @@ header * {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
 }
 
+/* Sombra más tenue en el contenido inferior del inicio (debajo de la sección de imagen) */
+.home-lower * {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+}
+
 /* Scrollbar moderno e integrado (toda la app y modales) */
 * {
   scrollbar-width: thin;

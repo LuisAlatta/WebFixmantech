@@ -71,22 +71,24 @@ const ServicesPreview = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="max-w-3xl mb-16"
+                    className="max-w-5xl mb-16"
                     style={{ textShadow: '0 2px 14px rgba(0,0,0,0.65)' }}
                 >
                     <h2 className="text-primary-400 font-black uppercase tracking-[0.3em] text-sm mb-4">Especialidades</h2>
                     <h3 className="text-4xl md:text-6xl font-[900] text-white uppercase tracking-tight leading-tight mb-6">
                         Soluciones de Alto Valor para la <span className="text-primary-500">Industria Minera</span>
                     </h3>
-                    <p className="text-secondary-100 text-2xl font-light leading-relaxed mb-8">
-                        Contribuimos a la continuidad operativa mediante servicios de ingeniería, mantenimiento y fabricación metalmecánica <span className="font-bold text-white">especializada</span>.
-                    </p>
-                    <Link
-                        to="/servicios"
-                        className="group inline-flex items-center gap-4 text-white font-black tracking-widest text-lg uppercase hover:text-primary-400 transition-colors"
-                    >
-                        Ver Portafolio Completo <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:bg-primary-600 group-hover:text-white text-secondary-900 transition-all"><ArrowRight className="w-5 h-5" /></div>
-                    </Link>
+                    <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                        <p className="text-secondary-100 text-2xl font-light leading-relaxed max-w-2xl">
+                            Contribuimos a la continuidad operativa mediante servicios de ingeniería, mantenimiento y fabricación metalmecánica <span className="font-bold text-white">especializada</span>.
+                        </p>
+                        <Link
+                            to="/servicios"
+                            className="group inline-flex items-center gap-4 shrink-0 whitespace-nowrap text-white font-black tracking-widest text-lg uppercase hover:text-primary-400 transition-colors"
+                        >
+                            Ver Portafolio Completo <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:bg-primary-600 group-hover:text-white text-secondary-900 transition-all"><ArrowRight className="w-5 h-5" /></div>
+                        </Link>
+                    </div>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 auto-rows-fr">

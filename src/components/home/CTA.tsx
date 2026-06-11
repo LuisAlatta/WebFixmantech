@@ -26,7 +26,7 @@ const CTA = () => {
                     <h2 className="text-4xl md:text-7xl font-[900] text-secondary-900 mb-8 tracking-tighter uppercase leading-none">
                         ¿Listo para <span className="text-primary-500">Optimizar</span> su Industria?
                     </h2>
-                    <p className="text-secondary-600 text-2xl md:text-3xl mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+                    <p className="text-black text-2xl md:text-3xl mb-12 max-w-3xl mx-auto leading-relaxed font-light">
                         Contáctenos hoy mismo y descubra por qué somos el socio estratégico número uno en el sur del país.
                     </p>
 
@@ -42,7 +42,7 @@ const CTA = () => {
                         <ArrowRight size={20} />
                     </motion.a>
 
-                    <div className="mt-12 flex justify-center gap-8 text-secondary-400 font-bold text-base md:text-lg tracking-widest uppercase">
+                    <div className="mt-12 flex justify-center gap-8 text-black font-bold text-base md:text-lg tracking-widest uppercase">
                         <span>Eficiencia</span>
                         <span className="text-primary-500">•</span>
                         <span>Seguridad</span>
