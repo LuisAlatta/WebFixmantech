@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 const Hero = () => {
     return (
         <section className="relative h-screen flex items-center justify-center overflow-hidden bg-white">
-            {/* Bright Background Image & Gradient */}
+            {/* Background Image with blur */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <motion.img
-                    initial={{ scale: 1.1, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
+                    initial={{ scale: 1.15, opacity: 0 }}
+                    animate={{ scale: 1.05, opacity: 1 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
                     src="/nuevas imagenes/IMAGEN 001.png"
                     alt="Modern Industrial Facility"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover blur-[6px]"
                 />
             </div>
 
