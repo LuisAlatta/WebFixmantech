@@ -288,13 +288,13 @@ const ServicesPage = () => {
                                 </div>
 
                                 {/* Content Column */}
-                                <div className="w-full lg:w-1/2 p-6 lg:p-8 overflow-y-auto flex flex-col justify-center">
+                                <div className="w-full lg:w-1/2 p-6 lg:p-8 overflow-y-auto flex flex-col">
 
-                                    <h2 className="text-2xl lg:text-3xl xl:text-4xl font-[900] text-secondary-900 mb-4 leading-tight uppercase tracking-tight text-balance">
+                                    <h2 className="text-2xl lg:text-3xl xl:text-4xl font-[900] text-secondary-900 mb-5 leading-tight uppercase tracking-tight text-balance shrink-0">
                                         {selectedService.title}
                                     </h2>
 
-                                    <div className="space-y-3 mb-5">
+                                    <div className="flex-1 flex flex-col justify-evenly gap-3">
                                         {selectedService.content.map((block, idx) => (
                                             <div key={idx}>
                                                 {block.type === 'section' && (
@@ -333,7 +333,7 @@ const ServicesPage = () => {
 
                                     <a
                                         href="https://wa.me/51996087437"
-                                        className="inline-flex items-center gap-3 py-4 px-10 bg-secondary-900 text-white rounded-full font-black uppercase tracking-widest text-xs hover:bg-primary-600 transition-all shadow-xl active:scale-95 self-start"
+                                        className="inline-flex items-center gap-3 py-4 px-10 bg-secondary-900 text-white rounded-full font-black uppercase tracking-widest text-xs hover:bg-primary-600 transition-all shadow-xl active:scale-95 self-end mt-6 shrink-0"
                                     >
                                         Consultar Proyecto Especial <ArrowRight size={18} />
                                     </a>

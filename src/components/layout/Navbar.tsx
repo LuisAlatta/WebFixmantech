@@ -42,13 +42,13 @@ const Navbar = () => {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center gap-10">
+                    <nav className="hidden md:flex items-center gap-6 lg:gap-8">
                         {links.map((link) => (
                             <NavLink
                                 key={link.path}
                                 to={link.path}
                                 className={({ isActive }) =>
-                                    `text-sm font-black uppercase tracking-[0.2em] transition-all duration-300 hover:text-secondary-900 border-b-2 ${isActive
+                                    `text-base lg:text-lg font-black uppercase tracking-[0.12em] transition-all duration-300 hover:text-secondary-900 border-b-2 ${isActive
                                         ? 'text-primary-600 border-primary-500'
                                         : 'text-primary-500 border-transparent hover:border-primary-200'
                                     }`
@@ -63,7 +63,7 @@ const Navbar = () => {
                             href="https://wa.me/51996087437"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-8 py-3 bg-secondary-900 text-white text-xs font-black uppercase tracking-widest rounded-full hover:bg-primary-600 transition-all shadow-xl shadow-secondary-900/10"
+                            className="px-8 py-3 bg-secondary-900 text-white text-sm lg:text-base font-black uppercase tracking-widest rounded-full hover:bg-primary-600 transition-all shadow-xl shadow-secondary-900/10"
                         >
                             Cotizar Ahora
                         </motion.a>
@@ -95,7 +95,7 @@ const Navbar = () => {
                                     to={link.path}
                                     onClick={() => setIsOpen(false)}
                                     className={({ isActive }) =>
-                                        `text-sm font-black uppercase tracking-[0.2em] p-5 rounded-2xl transition-all ${isActive
+                                        `text-base font-black uppercase tracking-[0.2em] p-5 rounded-2xl transition-all ${isActive
                                             ? 'bg-primary-50 text-primary-600'
                                             : 'text-primary-500 hover:bg-secondary-50'
                                         }`
@@ -106,7 +106,7 @@ const Navbar = () => {
                             ))}
                             <a
                                 href="https://wa.me/51996087437"
-                                className="mt-4 p-5 bg-primary-600 text-white text-center rounded-2xl font-black uppercase tracking-[0.2em] text-xs"
+                                className="mt-4 p-5 bg-primary-600 text-white text-center rounded-2xl font-black uppercase tracking-[0.2em] text-sm"
                             >
                                 WhatsApp Directo
                             </a>
