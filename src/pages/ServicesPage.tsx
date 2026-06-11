@@ -39,6 +39,8 @@ const services: Service[] = [
             {
                 type: 'list', items: [
                     'Diseño de ingeniería',
+                    'Fabricación con acero A36 y revestido con plancha de acero manganeso.',
+                    'Soldadura ER7100 con mezcla de argón y CO2',
                     'Servicios de instalación, reparación y mantenimiento en campo',
                     'Revestimientos antiabrasivos que maximizan la vida útil de los equipos y reducen el desgaste operativo.'
                 ]
