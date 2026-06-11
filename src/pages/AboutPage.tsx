@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Target, Eye, Award, Users } from 'lucide-react';
+import { clientLogos } from '../data/clients';
 
 // Specialized Shield Icon (Moved up for hoisting/reference safety)
 const ShieldIcon = ({ className }: { className?: string }) => (
@@ -28,7 +29,10 @@ const AboutPage = () => {
         <div className="pt-20 bg-white min-h-screen">
             {/* Header section with sophisticated industrial feel */}
             <div className="bg-secondary-900 text-white py-32 relative overflow-hidden">
-                <div className="absolute inset-0 opacity-20 bg-[url('/images/hero_bright_fixed.png')] bg-cover bg-fixed grayscale" />
+                <div
+                    className="absolute inset-0 opacity-30 bg-cover bg-center bg-fixed"
+                    style={{ backgroundImage: "url('/nuevas imagenes/IMAGEN 19.png')" }}
+                />
                 <div className="container mx-auto px-4 text-center relative z-10">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
@@ -179,12 +183,18 @@ const AboutPage = () => {
                             <p className="text-xl text-secondary-600 font-light mb-16 max-w-3xl mx-auto">
                                 Trabajamos con las empresas más importantes del sector industrial, brindando soluciones de ingeniería de clase mundial.
                             </p>
-                            <div className="bg-white p-12 rounded-[3rem] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.15)] border-4 border-secondary-50 max-w-4xl mx-auto">
-                                <img
-                                    src="/images/clientes_logos.png"
-                                    alt="Empresas clientes de FIXMANTECH"
-                                    className="w-full h-auto"
-                                />
+                            <div className="bg-white p-12 rounded-[3rem] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.15)] border-4 border-secondary-50 max-w-5xl mx-auto">
+                                <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 items-center">
+                                    {clientLogos.map((logo) => (
+                                        <div key={logo.alt} className="flex items-center justify-center h-24 grayscale hover:grayscale-0 transition-all duration-500">
+                                            <img
+                                                src={logo.src}
+                                                alt={logo.alt}
+                                                className="max-w-full max-h-full object-contain"
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </motion.div>
                     </div>

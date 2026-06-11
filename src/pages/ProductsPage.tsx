@@ -193,7 +193,8 @@ const categories: Category[] = [
                             'Dispersión uniforme del aire pulsante',
                             'Eficiencia de separación: 99.999% hasta 0,5 micrones',
                             'Juntas de doble sello continuo para evitar fugas',
-                            'Espaciado uniforme de pliegues con esferas sintéticas'
+                            'Espaciado uniforme de pliegues con esferas sintéticas',
+                            'Fabricado con materiales ignífugos'
                         ]
                     },
                     {
@@ -263,12 +264,12 @@ const ProductsPage = () => {
                             <div className="absolute inset-0 bg-gradient-to-t from-secondary-950 via-secondary-900/20 to-transparent z-10" />
 
                             <div className="absolute inset-0 p-12 flex flex-col justify-end z-20">
-                                <span className="text-primary-500 font-black uppercase tracking-widest text-xs mb-4 bg-primary-500/10 self-start px-4 py-1 rounded-full backdrop-blur-md">
+                                <span className="text-primary-500 font-black uppercase tracking-widest text-sm mb-4 bg-primary-500/10 self-start px-4 py-1 rounded-full backdrop-blur-md">
                                     {category.count}
                                 </span>
-                                <h3 className="text-3xl font-[900] text-white mb-4 tracking-tight uppercase leading-none">{category.name}</h3>
-                                <p className="text-secondary-200 text-lg line-clamp-2 max-w-sm mb-6 font-light">{category.description}</p>
-                                <div className="flex items-center text-primary-400 font-black text-xs tracking-[0.2em] group-hover:text-white transition-colors">
+                                <h3 className="text-4xl font-[900] text-white mb-4 tracking-tight uppercase leading-none">{category.name}</h3>
+                                <p className="text-secondary-200 text-xl line-clamp-2 max-w-sm mb-6 font-light">{category.description}</p>
+                                <div className="flex items-center text-primary-400 font-black text-sm tracking-[0.2em] group-hover:text-white transition-colors">
                                     EXPLORAR LÍNEA <ArrowRight className="ml-2 w-4 h-4" />
                                 </div>
                             </div>
@@ -334,7 +335,7 @@ const ProductsPage = () => {
                                                     onClick={() => setSelectedProduct(product)}
                                                     className="bg-white p-6 rounded-3xl border border-secondary-200 hover:border-primary-500 hover:shadow-xl transition-all cursor-pointer flex items-center gap-6 group"
                                                 >
-                                                    <div className="w-24 h-24 bg-secondary-50 rounded-2xl overflow-hidden shadow-inner shrink-0">
+                                                    <div className="w-32 h-32 md:w-40 md:h-40 bg-secondary-50 rounded-2xl overflow-hidden shadow-inner shrink-0">
                                                         <img src={product.image} className="w-full h-full object-cover group-hover:scale-110 transition-transform" alt={product.name} />
                                                     </div>
                                                     <div className="flex-grow">

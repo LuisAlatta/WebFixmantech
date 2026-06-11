@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone } from 'lucide-react';
+import { clientLogos } from '../../data/clients';
 
 const Footer = () => {
     return (
@@ -9,14 +10,14 @@ const Footer = () => {
                     {/* Brand Info */}
                     <div>
 
-                        <p className="text-secondary-400 text-sm leading-relaxed mb-6">
+                        <p className="text-secondary-400 text-base leading-relaxed mb-6">
                             Soluciones integrales de ingeniería y servicios técnicos especializados. Calidad y profesionalismo en cada proyecto.
                         </p>
                     </div>
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-6">Enlaces Rápidos</h3>
+                        <h3 className="text-xl font-semibold mb-6">Enlaces Rápidos</h3>
                         <ul className="space-y-4">
                             <li>
                                 <Link to="/" className="text-secondary-400 hover:text-primary-400 transition-colors">Inicio</Link>
@@ -38,7 +39,7 @@ const Footer = () => {
 
                     {/* Services */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-6">Servicios</h3>
+                        <h3 className="text-xl font-semibold mb-6">Servicios</h3>
                         <ul className="space-y-4 text-secondary-400">
                             <li>
                                 <Link to="/servicios" className="hover:text-primary-400 transition-colors">
@@ -75,7 +76,7 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-6">Contacto</h3>
+                        <h3 className="text-xl font-semibold mb-6">Contacto</h3>
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3">
                                 <MapPin className="text-primary-400 shrink-0 mt-1" size={20} />
@@ -91,7 +92,7 @@ const Footer = () => {
                             <li className="flex items-start gap-3">
                                 <Mail className="text-primary-400 shrink-0 mt-1" size={20} />
                                 <div className="text-secondary-400">
-                                    <p>Gerencia_Ventas@fixmantech.com</p>
+                                    <p>gerencia_ventas@fixmantech.com</p>
                                     <p>operaciones@fixmantech.com</p>
                                     <p>ventas@fixmantech.com</p>
                                 </div>
@@ -101,13 +102,17 @@ const Footer = () => {
 
                     {/* Trusted Clients */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-6">Confían en Nosotros</h3>
-                        <div className="bg-secondary-800/50 p-3 rounded-2xl">
-                            <img
-                                src="/images/clientes_logos.png"
-                                alt="Empresas clientes"
-                                className="w-full h-auto opacity-80 hover:opacity-100 transition-opacity"
-                            />
+                        <h3 className="text-xl font-semibold mb-6">Confían en Nosotros</h3>
+                        <div className="grid grid-cols-3 gap-3">
+                            {clientLogos.map((logo) => (
+                                <div key={logo.alt} className="bg-white rounded-xl p-2 flex items-center justify-center aspect-[3/2] shadow-sm">
+                                    <img
+                                        src={logo.src}
+                                        alt={logo.alt}
+                                        className="max-w-full max-h-full object-contain"
+                                    />
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
