@@ -257,11 +257,11 @@ const ServicesPage = () => {
                             exit={{ opacity: 0, y: 50, scale: 0.9 }}
                             className="svc-modal bg-white w-full max-w-7xl max-h-[90vh] rounded-[2.5rem] shadow-2xl relative z-10 overflow-hidden flex flex-col"
                         >
-                            <div className="flex flex-col lg:flex-row lg:h-[90vh] lg:max-h-[840px]">
+                            <div className="flex flex-col lg:flex-row flex-1 min-h-0">
                                 {/* Image Column */}
-                                <div className="w-full lg:w-1/2 h-72 lg:h-full relative shrink-0">
+                                <div className="w-full lg:w-1/2 h-72 lg:h-auto relative shrink-0 overflow-hidden">
                                     {selectedService.modalImages ? (
-                                        <div className="flex flex-col h-full">
+                                        <div className="absolute inset-0 flex flex-col">
                                             {selectedService.modalImages.map((src, i) => (
                                                 <img
                                                     key={i}
@@ -275,7 +275,7 @@ const ServicesPage = () => {
                                         <img
                                             src={selectedService.modalImage}
                                             alt={selectedService.title}
-                                            className="w-full h-full object-cover"
+                                            className="absolute inset-0 w-full h-full object-cover"
                                         />
                                     )}
                                     <div className="absolute inset-0 bg-gradient-to-t from-secondary-900/60 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-secondary-900/10 pointer-events-none" />
@@ -288,7 +288,7 @@ const ServicesPage = () => {
                                 </div>
 
                                 {/* Content Column */}
-                                <div className="w-full lg:w-1/2 p-6 lg:p-7 overflow-y-auto flex flex-col">
+                                <div className="w-full lg:w-1/2 min-h-0 p-6 lg:p-7 overflow-y-auto flex flex-col">
 
                                     <h2 className="text-2xl lg:text-3xl xl:text-4xl font-[900] text-secondary-900 mb-4 leading-tight uppercase tracking-tight text-balance shrink-0">
                                         {selectedService.title}
