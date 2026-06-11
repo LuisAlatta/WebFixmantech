@@ -31,7 +31,7 @@ interface Service {
 const services: Service[] = [
     {
         id: 1,
-        title: 'FABRICACIÓN Y REVESTIMIENTO DE CHUTES DE TRANSFERENCIA',
+        title: 'FABRICACIÓN Y MANTENIMIENTO DE CHUTES DE TRANSFERENCIA',
         image: '/nuevas imagenes/IMAGEN 006 SERVICIOS FABRICACION Y MNTTO DE CHUTES.png',
         modalImage: '/nuevas imagenes/IMAGEN 007 RESTIMIENTO.png',
         icon: <Shield />,
@@ -178,7 +178,6 @@ const ServicesPage = () => {
             {/* Bright Hero Section */}
             <div className="bg-white py-32 relative overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/10 to-transparent z-10" />
                     <img
                         src="/nuevas imagenes/IMAGEN 005.png"
                         alt="Ingeniería Industrial"
@@ -192,11 +191,12 @@ const ServicesPage = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         className="max-w-4xl"
+                        style={{ textShadow: '0 2px 18px rgba(0,0,0,0.85), 0 0 4px rgba(0,0,0,0.6)' }}
                     >
-                        <h1 className="text-6xl md:text-8xl font-[900] mb-8 tracking-tighter uppercase leading-none text-secondary-900">
+                        <h1 className="text-6xl md:text-8xl font-[900] mb-8 tracking-tighter uppercase leading-none text-white">
                             INGENIERÍA DE PLASMA <span className="text-primary-500">DE ALTA PRECISIÓN</span>
                         </h1>
-                        <p className="text-2xl md:text-3xl text-secondary-900 max-w-3xl font-light leading-relaxed">
+                        <p className="text-2xl md:text-3xl text-white max-w-3xl font-light leading-relaxed">
                             Desarrollamos soluciones técnicas personalizadas que impulsan la eficiencia, la innovación y el crecimiento a medida para las grandes empresas.
                         </p>
                     </motion.div>
@@ -229,8 +229,8 @@ const ServicesPage = () => {
                                     <h4 className="text-2xl font-[900] text-white uppercase tracking-tight leading-none mb-4 group-hover:text-primary-400 transition-colors">
                                         {service.title}
                                     </h4>
-                                    <div className="flex items-center text-primary-500 font-black text-[10px] tracking-[0.3em] uppercase group-hover:text-white transition-colors">
-                                        Explorar Detalles <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform" />
+                                    <div className="flex items-center justify-end text-white font-black text-sm md:text-base tracking-[0.25em] uppercase group-hover:text-primary-400 transition-colors">
+                                        Explorar Detalles <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" />
                                     </div>
                                 </div>
                             </div>
@@ -357,7 +357,7 @@ const ServicesPage = () => {
                         </h2>
                         <a
                             href="https://wa.me/51996087437"
-                            className="inline-block px-16 py-6 bg-white text-secondary-900 rounded-full font-black uppercase tracking-widest text-sm hover:bg-primary-600 hover:text-white transition-all shadow-2xl active:scale-95"
+                            className="inline-block px-16 py-6 bg-white text-secondary-900 rounded-full font-black uppercase tracking-widest text-lg md:text-xl hover:bg-primary-600 hover:text-white transition-all shadow-2xl active:scale-95"
                         >
                             Solicitar Presupuesto Técnico
                         </a>

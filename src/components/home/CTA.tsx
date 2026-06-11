@@ -36,13 +36,13 @@ const CTA = () => {
                         href="https://wa.me/51996087437?text=Hola,%20deseo%20solicitar%20asesoría%20especializada"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-4 bg-secondary-900 text-white px-12 py-6 rounded-full font-black uppercase tracking-[0.2em] text-xs shadow-2xl hover:bg-primary-600 transition-all duration-300"
+                        className="inline-flex items-center gap-4 bg-secondary-900 text-white px-12 py-6 rounded-full font-black uppercase tracking-[0.2em] text-base md:text-lg shadow-2xl hover:bg-primary-600 transition-all duration-300"
                     >
                         Contáctate con oficina técnica
                         <ArrowRight size={20} />
                     </motion.a>
 
-                    <div className="mt-12 flex justify-center gap-8 text-secondary-400 font-bold text-xs tracking-widest uppercase">
+                    <div className="mt-12 flex justify-center gap-8 text-secondary-400 font-bold text-base md:text-lg tracking-widest uppercase">
                         <span>Eficiencia</span>
                         <span className="text-primary-500">•</span>
                         <span>Seguridad</span>

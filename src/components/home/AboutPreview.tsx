@@ -21,13 +21,13 @@ const AboutPreview = () => {
                         whileInView={{ opacity: 1, scale: 1, x: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 1, ease: "easeOut" }}
-                        className="w-full lg:w-1/2 relative"
+                        className="w-full lg:w-[58%] relative"
                     >
                         <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-8 border-secondary-50">
                             <img
                                 src="/nuevas imagenes/IMAGEN 004.png"
                                 alt="Tecnología Industrial"
-                                className="w-full h-full object-cover aspect-[4/3] hover:scale-110 transition-transform duration-[1.5s]"
+                                className="w-full h-full object-cover aspect-[5/4] hover:scale-110 transition-transform duration-[1.5s]"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
                         </div>
@@ -51,7 +51,7 @@ const AboutPreview = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-                        className="w-full lg:w-1/2"
+                        className="w-full lg:w-[42%]"
                     >
                         <motion.div
                             initial={{ width: 0 }}
@@ -59,7 +59,7 @@ const AboutPreview = () => {
                             viewport={{ once: true }}
                             className="h-1.5 bg-primary-500 mb-6"
                         />
-                        <h2 className="text-primary-600 font-black uppercase tracking-[0.2em] text-sm mb-4">Eficiencia Garantizada</h2>
+                        <h2 className="text-primary-600 font-black uppercase tracking-[0.2em] text-base md:text-lg mb-4">Eficiencia Garantizada</h2>
                         <h3 className="text-5xl md:text-6xl font-[900] text-secondary-900 mb-8 leading-[1.1] tracking-tight">
                             Su Socio Estratégico en <span className="text-primary-500">Soluciones Industriales</span>
                         </h3>
@@ -81,7 +81,7 @@ const AboutPreview = () => {
                                     <div className="bg-white p-2 rounded-full shadow-sm group-hover:bg-primary-500 group-hover:text-white transition-colors">
                                         <CheckCircle size={20} />
                                     </div>
-                                    <span className="text-secondary-800 font-bold text-base tracking-tight">{benefit}</span>
+                                    <span className="text-secondary-800 font-bold text-lg tracking-tight">{benefit}</span>
                                 </motion.div>
                             ))}
                         </div>

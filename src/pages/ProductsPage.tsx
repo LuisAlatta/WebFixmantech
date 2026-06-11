@@ -232,7 +232,7 @@ const ProductsPage = () => {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                     >
-                        <h2 className="text-primary-500 font-black uppercase tracking-[0.3em] text-sm mb-4">Catálogo de Productos</h2>
+                        <h2 className="text-primary-500 font-black uppercase tracking-[0.3em] text-lg md:text-xl mb-4">Catálogo de Productos</h2>
                         <h1 className="text-5xl md:text-7xl font-[900] mb-6 tracking-tighter uppercase">
                             Alta <span className="text-primary-500">Tecnología</span> Industrial
                         </h1>
@@ -269,8 +269,8 @@ const ProductsPage = () => {
                                 </span>
                                 <h3 className="text-4xl font-[900] text-white mb-4 tracking-tight uppercase leading-none">{category.name}</h3>
                                 <p className="text-secondary-200 text-xl line-clamp-2 max-w-sm mb-6 font-light">{category.description}</p>
-                                <div className="flex items-center text-primary-400 font-black text-sm tracking-[0.2em] group-hover:text-white transition-colors">
-                                    EXPLORAR LÍNEA <ArrowRight className="ml-2 w-4 h-4" />
+                                <div className="flex items-center justify-end text-primary-400 font-black text-base md:text-lg tracking-[0.2em] group-hover:text-white transition-colors">
+                                    EXPLORAR LÍNEA <ArrowRight className="ml-2 w-5 h-5" />
                                 </div>
                             </div>
                         </motion.div>

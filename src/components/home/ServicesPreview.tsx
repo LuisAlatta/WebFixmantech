@@ -78,12 +78,13 @@ const ServicesPreview = () => {
                     <h3 className="text-4xl md:text-6xl font-[900] text-white uppercase tracking-tight leading-tight mb-6">
                         Soluciones de Alto Valor para la <span className="text-primary-500">Industria Minera</span>
                     </h3>
-                    <p className="text-secondary-100 text-xl font-light leading-relaxed mb-8">
+                    <p className="text-secondary-100 text-2xl font-light leading-relaxed mb-8">
                         Contribuimos a la continuidad operativa mediante servicios de ingeniería, mantenimiento y fabricación metalmecánica <span className="font-bold text-white">especializada</span>.
                     </p>
                     <Link
                         to="/servicios"
-                        className="group inline-flex items-center gap-4 text-white font-black tracking-widest text-sm uppercase hover:text-primary-400 transition-colors"
+                        className="group inline-flex items-center gap-4 text-white font-black tracking-widest text-lg uppercase hover:text-primary-400 transition-colors"
+                        style={{ textShadow: '1.5px 1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px -1.5px 0 #000' }}
                     >
                         Ver Portafolio Completo <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:bg-primary-600 group-hover:text-white text-secondary-900 transition-all"><ArrowRight className="w-5 h-5" /></div>
                     </Link>
@@ -104,15 +105,15 @@ const ServicesPreview = () => {
                                 to="/servicios"
                                 className="flex flex-col h-full bg-white p-8 rounded-[2rem] shadow-xl hover:shadow-2xl hover:shadow-primary-500/20 transition-all group border border-transparent hover:border-primary-100"
                             >
-                                <div className="flex items-center gap-4 mb-5">
-                                    <div className="w-14 h-14 bg-secondary-50 rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-500 shadow-inner p-2.5">
+                                <div className="flex flex-col items-start gap-4 mb-5">
+                                    <div className="w-16 h-16 bg-secondary-50 rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-500 shadow-inner p-2.5">
                                         <img src={service.icon} alt="" aria-hidden="true" className="w-full h-full object-contain" />
                                     </div>
-                                    <h4 className="text-base font-black tracking-tight text-secondary-900 uppercase leading-tight group-hover:text-primary-600 transition-colors">
+                                    <h4 className="text-lg font-black tracking-tight text-secondary-900 uppercase leading-tight group-hover:text-primary-600 transition-colors">
                                         {service.title}
                                     </h4>
                                 </div>
-                                <p className="text-secondary-500 text-sm leading-relaxed font-light">
+                                <p className="text-secondary-500 text-base leading-relaxed font-light">
                                     {service.description}
                                 </p>
                             </Link>

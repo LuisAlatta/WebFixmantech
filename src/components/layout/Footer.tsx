@@ -9,8 +9,8 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 mb-12">
                     {/* Quick Links */}
                     <div className="lg:col-span-2">
-                        <h3 className="text-2xl font-semibold mb-6">Enlaces Rápidos</h3>
-                        <ul className="space-y-4 text-lg">
+                        <h3 className="text-3xl font-semibold mb-6">Enlaces Rápidos</h3>
+                        <ul className="space-y-4 text-xl">
                             <li>
                                 <Link to="/" className="text-secondary-400 hover:text-primary-400 transition-colors">Inicio</Link>
                             </li>
@@ -31,8 +31,8 @@ const Footer = () => {
 
                     {/* Services */}
                     <div className="lg:col-span-3">
-                        <h3 className="text-2xl font-semibold mb-6">Servicios</h3>
-                        <ul className="space-y-4 text-secondary-400 text-lg">
+                        <h3 className="text-3xl font-semibold mb-6">Servicios</h3>
+                        <ul className="space-y-4 text-secondary-400 text-xl">
                             <li>
                                 <Link to="/servicios" className="hover:text-primary-400 transition-colors">
                                     Revestimiento de Chutes
@@ -68,8 +68,8 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div className="lg:col-span-3">
-                        <h3 className="text-2xl font-semibold mb-6">Contacto</h3>
-                        <ul className="space-y-4 text-base">
+                        <h3 className="text-3xl font-semibold mb-6">Contacto</h3>
+                        <ul className="space-y-4 text-lg">
                             <li className="flex items-start gap-3">
                                 <MapPin className="text-primary-400 shrink-0 mt-0.5" size={20} />
                                 <div className="text-secondary-400 leading-relaxed">
@@ -94,7 +94,7 @@ const Footer = () => {
 
                     {/* Trusted Clients */}
                     <div className="md:col-span-2 lg:col-span-4">
-                        <h3 className="text-2xl font-semibold mb-6">Confían en Nosotros</h3>
+                        <h3 className="text-3xl font-semibold mb-6">Confían en Nosotros</h3>
                         <div className="grid grid-cols-3 gap-4">
                             {clientLogos.map((logo) => (
                                 <div key={logo.alt} className="bg-white rounded-xl p-4 flex items-center justify-center aspect-[3/2] shadow-sm overflow-hidden">
