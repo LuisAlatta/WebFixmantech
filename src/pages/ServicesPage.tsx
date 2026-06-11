@@ -299,7 +299,7 @@ const ServicesPage = () => {
                                             <div key={idx}>
                                                 {block.type === 'section' && (
                                                     <div>
-                                                        <h3 className="text-primary-600 font-black text-xs uppercase tracking-widest mb-2.5 border-l-4 border-primary-500 pl-3">
+                                                        <h3 className="text-primary-600 font-black text-xl uppercase tracking-widest mb-2.5 border-l-4 border-primary-500 pl-3">
                                                             {block.title}
                                                         </h3>
                                                         <div className="grid grid-cols-1 gap-y-3">
@@ -333,7 +333,7 @@ const ServicesPage = () => {
 
                                     <a
                                         href="https://wa.me/51996087437"
-                                        className="inline-flex items-center gap-3 py-4 px-10 bg-secondary-900 text-white rounded-full font-black uppercase tracking-widest text-xs hover:bg-primary-600 transition-all shadow-xl active:scale-95 self-end mt-6 shrink-0"
+                                        className="inline-flex items-center gap-3 py-4 px-10 bg-secondary-900 text-white rounded-full font-black uppercase tracking-widest text-lg hover:bg-primary-600 transition-all shadow-xl active:scale-95 self-end mt-6 shrink-0"
                                     >
                                         Consultar Proyecto Especial <ArrowRight size={18} />
                                     </a>
