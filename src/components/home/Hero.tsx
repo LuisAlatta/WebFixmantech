@@ -6,7 +6,6 @@ const Hero = () => {
         <section className="relative h-screen flex items-center justify-center overflow-hidden bg-white">
             {/* Bright Background Image & Gradient */}
             <div className="absolute inset-0 z-0 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-white via-white/10 to-transparent z-10" />
                 <motion.img
                     initial={{ scale: 1.1, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
