@@ -36,10 +36,10 @@ const Hero = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
-                        <h1 className="text-6xl md:text-8xl font-[900] text-secondary-900 mb-6 leading-tight tracking-tighter">
+                        <h1 className="text-6xl md:text-8xl font-[900] text-white mb-6 leading-tight tracking-tighter">
                             Soluciones Integrales para su <span className="text-primary-500">Industria</span>
                         </h1>
-                        <p className="text-2xl md:text-3xl text-secondary-900 mb-8 leading-relaxed max-w-2xl font-light">
+                        <p className="text-2xl md:text-3xl text-white mb-8 leading-relaxed max-w-2xl font-light">
                             Especialistas en mantenimiento industrial, instalaciones eléctricas y proyectos de ingeniería.
                             Garantizamos eficiencia, seguridad y calidad superior.
                         </p>
