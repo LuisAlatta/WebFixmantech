@@ -287,13 +287,13 @@ const ServicesPage = () => {
                                 </div>
 
                                 {/* Content Column */}
-                                <div className="w-full lg:w-1/2 p-6 lg:p-8 overflow-y-auto flex flex-col">
+                                <div className="w-full lg:w-1/2 p-6 lg:p-7 overflow-y-auto flex flex-col">
 
-                                    <h2 className="text-2xl lg:text-3xl xl:text-4xl font-[900] text-secondary-900 mb-5 leading-tight uppercase tracking-tight text-balance shrink-0">
+                                    <h2 className="text-2xl lg:text-3xl xl:text-4xl font-[900] text-secondary-900 mb-4 leading-tight uppercase tracking-tight text-balance shrink-0">
                                         {selectedService.title}
                                     </h2>
 
-                                    <div className="flex-1 flex flex-col justify-evenly gap-3">
+                                    <div className="flex-1 flex flex-col justify-evenly gap-2">
                                         {selectedService.content.map((block, idx) => (
                                             <div key={idx}>
                                                 {block.type === 'section' && (
@@ -304,8 +304,8 @@ const ServicesPage = () => {
                                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
                                                             {block.items?.map((item, i) => (
                                                                 <div key={i} className="flex items-start gap-2.5 group">
-                                                                    <CheckCircle2 size={16} className="text-primary-600 shrink-0 mt-0.5" />
-                                                                    <p className="text-sm text-secondary-600 leading-snug">{item}</p>
+                                                                    <CheckCircle2 size={17} className="text-primary-600 shrink-0 mt-0.5" />
+                                                                    <p className="text-[15px] text-secondary-600 leading-snug">{item}</p>
                                                                 </div>
                                                             ))}
                                                         </div>
@@ -315,15 +315,15 @@ const ServicesPage = () => {
                                                     <div className="space-y-2">
                                                         {block.items?.map((item, i) => (
                                                             <div key={i} className="flex items-start gap-3 group">
-                                                                <CheckCircle2 size={17} className="text-primary-600 shrink-0 mt-0.5" />
-                                                                <p className="text-[15px] text-secondary-700 leading-snug">{item}</p>
+                                                                <CheckCircle2 size={18} className="text-primary-600 shrink-0 mt-0.5" />
+                                                                <p className="text-base text-secondary-700 leading-snug">{item}</p>
                                                             </div>
                                                         ))}
                                                     </div>
                                                 )}
                                                 {block.type === 'paragraph' && (
                                                     <div className="bg-secondary-50 p-5 rounded-2xl border border-secondary-100 shadow-inner">
-                                                        <p className="text-sm text-secondary-900 leading-relaxed">{block.text}</p>
+                                                        <p className="text-[15px] text-secondary-900 leading-relaxed">{block.text}</p>
                                                     </div>
                                                 )}
                                             </div>
