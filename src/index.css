@@ -69,6 +69,11 @@
   font-weight: 700 !important;
 }
 
+/* Sombra suave difusa en todo el texto de la web (solicitado por el cliente) */
+body * {
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.85), 0 0 4px rgba(0, 0, 0, 0.6);
+}
+
 /* Scrollbar moderno e integrado (toda la app y modales) */
 * {
   scrollbar-width: thin;

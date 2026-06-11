@@ -84,7 +84,6 @@ const ServicesPreview = () => {
                     <Link
                         to="/servicios"
                         className="group inline-flex items-center gap-4 text-white font-black tracking-widest text-lg uppercase hover:text-primary-400 transition-colors"
-                        style={{ textShadow: '1.5px 1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px -1.5px 0 #000' }}
                     >
                         Ver Portafolio Completo <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:bg-primary-600 group-hover:text-white text-secondary-900 transition-all"><ArrowRight className="w-5 h-5" /></div>
                     </Link>

@@ -191,7 +191,6 @@ const ServicesPage = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         className="max-w-4xl"
-                        style={{ textShadow: '0 2px 18px rgba(0,0,0,0.85), 0 0 4px rgba(0,0,0,0.6)' }}
                     >
                         <h1 className="text-6xl md:text-8xl font-[900] mb-8 tracking-tighter uppercase leading-none text-white">
                             INGENIERÍA DE PLASMA <span className="text-primary-500">DE ALTA PRECISIÓN</span>
