@@ -6,19 +6,19 @@ const Footer = () => {
     return (
         <footer className="bg-secondary-900 text-white pt-16 pb-8">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-12">
                     {/* Brand Info */}
                     <div>
 
-                        <p className="text-secondary-400 text-base leading-relaxed mb-6">
+                        <p className="text-secondary-400 text-lg leading-relaxed mb-6">
                             Soluciones integrales de ingeniería y servicios técnicos especializados. Calidad y profesionalismo en cada proyecto.
                         </p>
                     </div>
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-xl font-semibold mb-6">Enlaces Rápidos</h3>
-                        <ul className="space-y-4">
+                        <h3 className="text-2xl font-semibold mb-6">Enlaces Rápidos</h3>
+                        <ul className="space-y-4 text-lg">
                             <li>
                                 <Link to="/" className="text-secondary-400 hover:text-primary-400 transition-colors">Inicio</Link>
                             </li>
@@ -39,26 +39,26 @@ const Footer = () => {
 
                     {/* Services */}
                     <div>
-                        <h3 className="text-xl font-semibold mb-6">Servicios</h3>
-                        <ul className="space-y-4 text-secondary-400">
+                        <h3 className="text-2xl font-semibold mb-6">Servicios</h3>
+                        <ul className="space-y-4 text-secondary-400 text-lg">
                             <li>
                                 <Link to="/servicios" className="hover:text-primary-400 transition-colors">
-                                    Fabricación y Revestimiento de Chutes
+                                    Fabricación y Revestimiento de Chutes de Transferencia
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/servicios" className="hover:text-primary-400 transition-colors">
-                                    Instalación de Chutes de Transferencia
+                                    Sistemas de Supresión de Polvo de Alta Tecnología
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/servicios" className="hover:text-primary-400 transition-colors">
-                                    Diseño de Tanques y Ductos
+                                    Suministro y Mantenimiento de Colectores de Polvo
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/servicios" className="hover:text-primary-400 transition-colors">
-                                    Reparación de Tolvas CAT y Komatsu
+                                    Mantenimiento de Plantas Concentradoras
                                 </Link>
                             </li>
                             <li>
@@ -68,7 +68,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <Link to="/servicios" className="hover:text-primary-400 transition-colors">
-                                    Mantenimiento de Plantas Concentradoras
+                                    Diseño e Ingeniería
                                 </Link>
                             </li>
                         </ul>
@@ -76,8 +76,8 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div>
-                        <h3 className="text-xl font-semibold mb-6">Contacto</h3>
-                        <ul className="space-y-4">
+                        <h3 className="text-2xl font-semibold mb-6">Contacto</h3>
+                        <ul className="space-y-4 text-lg">
                             <li className="flex items-start gap-3">
                                 <MapPin className="text-primary-400 shrink-0 mt-1" size={20} />
                                 <span className="text-secondary-400">PP.JJ. JOSE SANTOS ATAHUALPA Mz T Lote 06</span>
@@ -101,11 +101,11 @@ const Footer = () => {
                     </div>
 
                     {/* Trusted Clients */}
-                    <div>
-                        <h3 className="text-xl font-semibold mb-6">Confían en Nosotros</h3>
-                        <div className="grid grid-cols-3 gap-3">
+                    <div className="md:col-span-2 lg:col-span-2">
+                        <h3 className="text-2xl font-semibold mb-6">Confían en Nosotros</h3>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                             {clientLogos.map((logo) => (
-                                <div key={logo.alt} className="bg-white rounded-xl p-2 flex items-center justify-center aspect-[3/2] shadow-sm">
+                                <div key={logo.alt} className="bg-white rounded-xl p-4 flex items-center justify-center aspect-[3/2] shadow-sm">
                                     <img
                                         src={logo.src}
                                         alt={logo.alt}
