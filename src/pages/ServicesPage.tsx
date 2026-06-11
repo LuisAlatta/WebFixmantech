@@ -5,7 +5,6 @@ import {
     Shield,
     Wrench,
     Database,
-    Hammer,
     Factory,
     Settings,
     ArrowRight,
@@ -23,6 +22,7 @@ interface Service {
     id: number;
     title: string;
     image: string;
+    modalImage: string;
     icon: React.ReactNode;
     content: ContentBlock[];
 }
@@ -30,103 +30,68 @@ interface Service {
 const services: Service[] = [
     {
         id: 1,
-        title: 'FABRICACIÓN Y REVESTIMIENTO DE CHUTES DE TRASFERENCIA',
-        image: '/images/services/chutes_revestimiento.png',
+        title: 'FABRICACIÓN Y REVESTIMIENTO DE CHUTES DE TRANSFERENCIA',
+        image: '/nuevas imagenes/IMAGEN 006 SERVICIOS FABRICACION Y MNTTO DE CHUTES.png',
+        modalImage: '/nuevas imagenes/IMAGEN 007 RESTIMIENTO.png',
         icon: <Shield />,
         content: [
             {
                 type: 'list', items: [
                     'Diseño de ingeniería',
-                    'Fabricación con acero A36 y revestido con plancha de acero manganeso.',
-                    'Soldadura ER7100 con mezcla de argón y CO2'
+                    'Servicios de instalación, reparación y mantenimiento en campo',
+                    'Revestimientos antiabrasivos que maximizan la vida útil de los equipos y reducen el desgaste operativo.'
                 ]
             },
-            { type: 'paragraph', text: 'En fixmantech S.A.C. contamos con los productos semi-manufacturados TIVAR 1000 UHMW, TIVAR 88 UHMW, TIVAR 88-2 UHMW y TIVAR HOT de Quadrant EPP, lider mundial en fabricación de materiales para revestimientos.' }
+            { type: 'paragraph', text: 'En FIXMANTECH S.A.C. trabajamos con productos manufacturados con aceros brinell 400, 500 HB.' }
         ]
     },
     {
         id: 2,
-        title: 'FABRICACIÓN E INSTALACIÓN DE CHUTES DE TRANSFERENCIA',
-        image: '/images/services/chutes_instalacion.png',
+        title: 'SISTEMAS DE SUPRESIÓN DE POLVO DE ALTA TECNOLOGÍA',
+        image: '/nuevas imagenes/IMAGEN 008 SISTEMAS DE SUPRESIÓN DE POLVO.png',
+        modalImage: '/nuevas imagenes/IMAGEN 009 - SISTEMA DE NIEBLA.png',
         icon: <Wrench />,
         content: [
+            { type: 'paragraph', text: 'Sistema de niebla seca para control de polución.' },
             {
                 type: 'list', items: [
-                    'Soluciones duraderas y eficientes',
-                    'Instalación en planta con personal calificado',
-                    'Diseños personalizados según requerimientos técnicos',
-                    'Materiales de alta resistencia al desgaste y la abrasión'
+                    'Consumo de agua optimizado, desde 0.5 L/min por punto de aplicación.',
+                    'Reduce la contaminación ambiental y mejora la calidad del aire.',
+                    'Minimiza el consumo de agua en comparación con sistemas convencionales.',
+                    'Aplicable en chancado primario, secundario y terciario. Fajas transportadoras.',
+                    'Zarandas vibratorias.',
+                    'Tolvas de recepción y descarga.'
                 ]
-            },
-            { type: 'paragraph', text: 'Ofrecemos servicios especializados en diseño, fabricación e instalación de chutes, incluyendo chutes de transferencia, adaptados a las necesidades específicas de cada operación. Nuestro trabajo garantiza una óptima eficiencia en el manejo de materiales, minimizando el desgaste y mejorando la seguridad operativa.' }
+            }
         ]
     },
     {
         id: 3,
-        title: 'DISEÑO Y FABRICACIÓN DE TANQUES Y DUCTOS',
-        image: '/images/services/tanques_ductos.png',
+        title: 'SUMINISTRO Y MANTENIMIENTO DE COLECTORES DE POLVO',
+        image: '/nuevas imagenes/IMAGEN 010 MANTO COLECTORES DE POLVO.png',
+        modalImage: '/nuevas imagenes/IMAGEN 011.png',
         icon: <Database />,
         content: [
             {
-                type: 'section', title: 'A. FABRICACIÓN DE TANQUES', items: [
-                    'Para combustible',
-                    'Tanques para agua',
-                    'Tanques para equipos móviles, recubiertos con pintura epoxica y deflectores que ayudan a la estabilidad'
+                type: 'list', items: [
+                    'Nuestros filtros de mangas están diseñados y fabricados con materiales de alta calidad.',
+                    'Filtración superior para máxima protección del sistema y del personal.',
+                    'Fabricados con material ignífugo.',
+                    'Cambio de filtros en campo.'
                 ]
             },
             {
-                type: 'section', title: 'B. FABRICACIÓN DE TANQUES ESTACIONARIOS', items: [
-                    'Fabricación de carretes recubiertas con Poliuretano cerámico',
-                    'Fabricación de codos de 90, 45,30 grados',
-                    'Fabricación de conos truncadosy pantalones',
-                    'Fabricación de ductos en acero inox 299, 309, 316, 316L, A36',
-                    'Tuberías para ductos de colectores de polvos'
-                ]
-            },
-            {
-                type: 'section', title: 'C. FABRICACIÓN DE TANQUES ESTACIONARIOS', items: [
-                    'Fabricación en acero inoxidable para industria alimentaria y con plancha de acero en A36, barandas protegidas con una capa de pintura Epóxica Anticorrosiva; aplicando Ensayos no Destructivos a la Soldadura para el Control de Calidad'
+                type: 'section', title: 'Soporte Técnico Especializado', items: [
+                    'Asesoría y respaldo técnico en cada etapa del servicio y postventa.'
                 ]
             }
         ]
     },
     {
         id: 4,
-        title: 'REPARACION PARCIAL Y TOTAL DE TOLVA CAT Y KOMATZU',
-        image: '/images/services/reparacion_tolvas.png',
-        icon: <Hammer />,
-        content: [
-            {
-                type: 'list', items: [
-                    'Aplicando normas de soldadura',
-                    'Personal técnico homologado',
-                    'Inspección continua en la aplicación de soldadura',
-                    'Precalentado correcto de Materiales en casos de planchas de 400, 500 Brinell'
-                ]
-            },
-            { type: 'paragraph', text: 'En FIXMANTECH SAC tenemos la capacidad para fabricar y reparar cucharones de toda capacidad para cargadores, scootrams, escavadoras y retroexcavadoras de equipos para movimiento de tierra de marcas CAT, KOMATSU, VOLVO, HITACHI, TEREX, LIEBHERR; entre otras importantes marcas, así como fabricación de pines y otros para sus equipos. La reparación de cucharones utilizando planchas bimetalicas anti-desgaste T1 500BHM,CHRONIT T1550 BHM, plancha aleada de gran resistencia al desgaste de abrasión, impacto y deslizamiento.' }
-        ]
-    },
-    {
-        id: 5,
-        title: 'FABRICACION DE ESTRUCTURAS METALICAS',
-        image: '/images/services/estructuras_metalicas.png',
-        icon: <Factory />,
-        content: [
-            {
-                type: 'list', items: [
-                    'Servicio de Corte, Plegado',
-                    'Corte por Plasma',
-                    'Maquinado con Torno y Fresa'
-                ]
-            },
-            { type: 'paragraph', text: 'Somos una empresa especializada en el desarrollo de proyectos de ingeniería y construcción para la gran industria, liderada por un equipo de profesionales jóvenes, con ideas innovadoras, que combinan calidad, compromiso y eficiencia.' }
-        ]
-    },
-    {
-        id: 6,
         title: 'MANTENIMIENTO DE PLANTAS CONCENTRADORAS',
-        image: '/images/services/mantenimiento_plantas.png',
+        image: '/nuevas imagenes/IMAGEN 012 MANTO PLANTAS.png',
+        modalImage: '/nuevas imagenes/IMAGEN 013 MANTO PLANTAS.png',
         icon: <Settings />,
         content: [
             {
@@ -137,8 +102,58 @@ const services: Service[] = [
                     'Asistencia técnica en planta, asegurando una operación continua y segura.'
                 ]
             },
-            { type: 'paragraph', text: 'Trabajamos de la mano con nuestros clientes para garantizar el funcionamiento óptimo de sus instalaciones, reduciendo tiempos de parada y aumentando la productividad. Nuestro compromiso es ofrecer un servicio confiable, seguro y de calidad, respaldado por la experiencia y profesionalismo de nuestro personal.' },
-            { type: 'paragraph', text: 'FIXMANTECH S.A.C. es una empresa especialista en mantenimiento de plantas industriales. Contamos con amplia experiencia dedicada a la reparación, montaje y mantenimiento industrial. Ofrecemos un mantenimiento preventivo y correctivo de su maquinaria, llevando un control exhaustivo de cada uno de los elementos, previniendo paradas innecesarias y planificando una interveción controlada.' }
+            {
+                type: 'section', title: 'Trabajos Especializados', items: [
+                    'Cambio de polines',
+                    'Cambio de válvulas Pinck y Clarkson',
+                    'Mantenimiento de zarandas',
+                    'Hidrociclones y cambio de poleas',
+                    'Mesa centradora',
+                    'HPGR'
+                ]
+            },
+            { type: 'paragraph', text: 'Trabajamos de la mano con nuestros clientes para garantizar el funcionamiento óptimo de sus instalaciones, reduciendo tiempos de parada y aumentando la productividad. Nuestro compromiso es ofrecer un servicio confiable, seguro y de calidad, respaldado por la experiencia y profesionalismo de nuestro personal.' }
+        ]
+    },
+    {
+        id: 5,
+        title: 'FABRICACIÓN DE ESTRUCTURAS METÁLICAS',
+        image: '/nuevas imagenes/IMAGEN 15 FABRICACION.png',
+        modalImage: '/nuevas imagenes/IMAGEN 016.png',
+        icon: <Factory />,
+        content: [
+            { type: 'paragraph', text: 'Soluciones integrales en fabricación y montaje de estructuras metálicas con calidad, precisión y compromiso con la excelencia operativa.' },
+            {
+                type: 'section', title: 'Nuestros Servicios Incluyen', items: [
+                    'Fabricación de estructuras metálicas livianas y pesadas.',
+                    'Construcción de plataformas, soportes, chutes y tolvas.',
+                    'Fabricación de transportadores y sistemas de manejo de materiales.',
+                    'Soldadura especializada y procesos de corte y conformado.',
+                    'Maquinado, plegado y corte por plasma CNC.',
+                    'Montaje y adecuación de componentes en planta y campo.'
+                ]
+            }
+        ]
+    },
+    {
+        id: 6,
+        title: 'DISEÑO E INGENIERÍA',
+        image: '/nuevas imagenes/IMAGEN 017.png',
+        modalImage: '/nuevas imagenes/IMAGEN 18.png',
+        icon: <Database />,
+        content: [
+            { type: 'paragraph', text: 'En FIXMANTECH S.A.C. desarrollamos soluciones de ingeniería orientadas a la fabricación, mantenimiento y optimización de equipos para plantas mineras e industriales.' },
+            { type: 'paragraph', text: 'Realizamos planos de fabricación y detalle en AutoCAD, así como modelos 3D en SolidWorks e Inventor, permitiendo visualizar, validar y mejorar cada componente antes de su fabricación o montaje.' },
+            {
+                type: 'section', title: 'Nuestro Servicio Incluye', items: [
+                    'Ingeniería conceptual, básica y de detalle.',
+                    'Modelamiento 3D de estructuras, tolvas, chutes y transportadores.',
+                    'Planos de fabricación y montaje.',
+                    'Desarrollo de despieces y listas de materiales.',
+                    'Verificación de interferencias y mejoras constructivas.',
+                    'Soporte técnico para fabricación y montaje en campo.'
+                ]
+            }
         ]
     }
 ];
@@ -164,7 +179,7 @@ const ServicesPage = () => {
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-gradient-to-r from-white via-white/10 to-transparent z-10" />
                     <img
-                        src="/images/services/mantenimiento_plantas.png"
+                        src="/nuevas imagenes/IMAGEN 005.png"
                         alt="Ingeniería Industrial"
                         className="w-full h-full object-cover opacity-100"
                     />
@@ -178,10 +193,10 @@ const ServicesPage = () => {
                         className="max-w-4xl"
                     >
                         <h1 className="text-6xl md:text-8xl font-[900] mb-8 tracking-tighter uppercase leading-none text-secondary-900">
-                            INGIENERÍA DE PLASMA <span className="text-primary-500">DE ALTA PRECISIÓN</span>
+                            INGENIERÍA DE PLASMA <span className="text-primary-500">DE ALTA PRECISIÓN</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-secondary-900 max-w-2xl font-light leading-relaxed">
-                            Desarrollamos soluciones técnicas personalizadas que impulsan la eficiencia, la innovación y el crecimiento a media para las grandes empresas.
+                        <p className="text-2xl md:text-3xl text-secondary-900 max-w-3xl font-light leading-relaxed">
+                            Desarrollamos soluciones técnicas personalizadas que impulsan la eficiencia, la innovación y el crecimiento a medida para las grandes empresas.
                         </p>
                     </motion.div>
                 </div>
@@ -244,7 +259,7 @@ const ServicesPage = () => {
                                 {/* Image Column */}
                                 <div className="w-full lg:w-1/2 h-80 lg:h-auto relative">
                                     <img
-                                        src={selectedService.image}
+                                        src={selectedService.modalImage}
                                         alt={selectedService.title}
                                         className="w-full h-full object-cover"
                                     />
