@@ -302,29 +302,29 @@ const ServicesPage = () => {
                                                         <h3 className="text-primary-600 font-black text-xs uppercase tracking-widest mb-2.5 border-l-4 border-primary-500 pl-3">
                                                             {block.title}
                                                         </h3>
-                                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
+                                                        <div className="grid grid-cols-1 gap-y-3">
                                                             {block.items?.map((item, i) => (
-                                                                <div key={i} className="flex items-start gap-2.5 group">
-                                                                    <CheckCircle2 size={17} className="text-primary-600 shrink-0 mt-0.5" />
-                                                                    <p className="text-base font-bold text-black leading-snug">{item}</p>
+                                                                <div key={i} className="flex items-start gap-3 group">
+                                                                    <CheckCircle2 size={22} className="text-primary-600 shrink-0 mt-0.5" />
+                                                                    <p className="text-xl font-bold text-black leading-relaxed">{item}</p>
                                                                 </div>
                                                             ))}
                                                         </div>
                                                     </div>
                                                 )}
                                                 {block.type === 'list' && (
-                                                    <div className="space-y-2">
+                                                    <div className="space-y-3">
                                                         {block.items?.map((item, i) => (
                                                             <div key={i} className="flex items-start gap-3 group">
-                                                                <CheckCircle2 size={18} className="text-primary-600 shrink-0 mt-0.5" />
-                                                                <p className="text-lg font-bold text-black leading-snug">{item}</p>
+                                                                <CheckCircle2 size={22} className="text-primary-600 shrink-0 mt-0.5" />
+                                                                <p className="text-xl font-bold text-black leading-relaxed">{item}</p>
                                                             </div>
                                                         ))}
                                                     </div>
                                                 )}
                                                 {block.type === 'paragraph' && (
-                                                    <div className="bg-secondary-50 p-5 rounded-2xl border border-secondary-100 shadow-inner">
-                                                        <p className="text-base font-bold text-black leading-relaxed">{block.text}</p>
+                                                    <div className="bg-secondary-50 p-6 rounded-2xl border border-secondary-100 shadow-inner">
+                                                        <p className="text-xl font-bold text-black leading-relaxed">{block.text}</p>
                                                     </div>
                                                 )}
                                             </div>
