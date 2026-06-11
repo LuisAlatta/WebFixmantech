@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Hero = () => {
     return (
         <section className="relative h-screen flex items-center justify-center overflow-hidden bg-white">
-            {/* Background Image with blur */}
+            {/* Background Image: sharp base + blurred layer masked on the left */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <motion.img
                     initial={{ scale: 1.15, opacity: 0 }}
@@ -12,7 +12,17 @@ const Hero = () => {
                     transition={{ duration: 1.5, ease: "easeOut" }}
                     src="/nuevas imagenes/IMAGEN 001.png"
                     alt="Modern Industrial Facility"
-                    className="w-full h-full object-cover blur-[6px]"
+                    className="w-full h-full object-cover"
+                />
+                <img
+                    src="/nuevas imagenes/IMAGEN 001.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 w-full h-full object-cover blur-[10px] scale-110"
+                    style={{
+                        maskImage: 'linear-gradient(to right, black 0%, black 35%, transparent 65%)',
+                        WebkitMaskImage: 'linear-gradient(to right, black 0%, black 35%, transparent 65%)',
+                    }}
                 />
             </div>
 
