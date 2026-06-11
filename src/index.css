@@ -75,6 +75,12 @@ body * {
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.65);
 }
 
+/* La barra superior (navbar) va sin sombra */
+header,
+header * {
+  text-shadow: none;
+}
+
 /* Scrollbar moderno e integrado (toda la app y modales) */
 * {
   scrollbar-width: thin;

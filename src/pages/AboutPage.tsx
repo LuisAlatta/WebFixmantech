@@ -24,7 +24,7 @@ const AboutPage = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="text-primary-500 font-black uppercase tracking-[0.4em] text-xs mb-6">Nuestra Esencia</h2>
+                        <h2 className="text-primary-500 font-black uppercase tracking-[0.3em] text-lg md:text-xl mb-6">Nuestra Esencia</h2>
                         <h1 className="text-6xl md:text-8xl font-[900] mb-8 tracking-tighter uppercase leading-none">
                             Ingeniería que <span className="text-primary-500">Trasciende</span>
                         </h1>
