@@ -292,9 +292,9 @@ const ProductsPage = () => {
                                 initial={{ opacity: 0, scale: 0.95, y: 20 }}
                                 animate={{ opacity: 1, scale: 1, y: 0 }}
                                 exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                                className="bg-white w-full max-w-6xl max-h-[90vh] overflow-hidden rounded-[4rem] shadow-2xl relative z-10 flex flex-col"
+                                className="bg-white w-full max-w-6xl max-h-[90vh] overflow-y-auto rounded-[4rem] shadow-2xl relative z-10 flex flex-col"
                             >
-                                <div className="flex flex-col md:flex-row h-full">
+                                <div className="flex flex-col md:flex-row md:h-[88vh] md:max-h-[760px]">
                                     {/* Sidebar Category Info */}
                                     <div className="w-full md:w-1/3 bg-secondary-900 p-12 flex flex-col justify-between relative overflow-hidden">
                                         <div className="absolute inset-0 opacity-20 pointer-events-none">
