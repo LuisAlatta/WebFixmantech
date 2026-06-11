@@ -18,10 +18,10 @@ const Hero = () => {
                     src="/nuevas imagenes/IMAGEN 001.png"
                     alt=""
                     aria-hidden="true"
-                    className="absolute inset-0 w-full h-full object-cover blur-[10px] scale-110"
+                    className="absolute inset-0 w-full h-full object-cover blur-[6px] scale-110"
                     style={{
-                        maskImage: 'linear-gradient(to right, black 0%, black 35%, transparent 65%)',
-                        WebkitMaskImage: 'linear-gradient(to right, black 0%, black 35%, transparent 65%)',
+                        maskImage: 'linear-gradient(to right, black 0%, black 12%, transparent 25%)',
+                        WebkitMaskImage: 'linear-gradient(to right, black 0%, black 12%, transparent 25%)',
                     }}
                 />
             </div>
@@ -33,7 +33,7 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
                 src="/nuevas imagenes/logocompletosinfondo.png"
                 alt="FIXMANTECH"
-                className="absolute top-24 left-6 md:left-12 z-20 w-24 md:w-36 h-auto object-contain pointer-events-none drop-shadow-xl"
+                className="absolute top-32 md:top-36 left-6 md:left-12 z-20 w-32 md:w-44 h-auto object-contain pointer-events-none drop-shadow-xl"
             />
 
             {/* Content */}
