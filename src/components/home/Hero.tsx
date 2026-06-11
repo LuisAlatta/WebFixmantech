@@ -36,9 +36,6 @@ const Hero = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
-                        <h2 className="text-primary-600 font-black text-xl md:text-2xl mb-4 uppercase tracking-[0.2em]">
-                            Ingeniería y Servicios Técnicos
-                        </h2>
                         <h1 className="text-6xl md:text-8xl font-[900] text-secondary-900 mb-6 leading-tight tracking-tighter">
                             Soluciones Integrales para su <span className="text-primary-500">Industria</span>
                         </h1>
@@ -54,13 +51,13 @@ const Hero = () => {
                                 href="https://wa.me/51996087437?text=Hola,%20quisiera%20solicitar%20una%20cotización"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group px-10 py-5 bg-primary-600 text-white rounded-full font-black uppercase tracking-widest text-xs flex items-center gap-3 hover:bg-secondary-900 transition-all shadow-2xl shadow-primary-500/30"
+                                className="group px-12 py-6 bg-primary-600 text-white rounded-full font-black uppercase tracking-widest text-sm md:text-base flex items-center gap-3 hover:bg-secondary-900 transition-all shadow-2xl shadow-primary-500/30"
                             >
                                 Solicitar Cotización
                             </motion.a>
                             <Link
                                 to="/servicios"
-                                className="group px-10 py-5 bg-primary-600 text-white rounded-full font-black uppercase tracking-widest text-xs flex items-center gap-3 hover:bg-secondary-900 transition-all shadow-2xl shadow-primary-500/30"
+                                className="group px-12 py-6 bg-primary-600 text-white rounded-full font-black uppercase tracking-widest text-sm md:text-base flex items-center gap-3 hover:bg-secondary-900 transition-all shadow-2xl shadow-primary-500/30"
                             >
                                 Nuestros Servicios
                             </Link>
