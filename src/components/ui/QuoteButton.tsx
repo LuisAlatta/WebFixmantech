@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, Mail, X } from 'lucide-react';
 import { WHATSAPP_NUMBER, QUOTE_EMAIL, buildQuoteMailto } from '../../data/contact';
@@ -47,7 +48,8 @@ const QuoteButton = ({
                 {children}
             </motion.button>
 
-            <AnimatePresence>
+            {createPortal(
+                <AnimatePresence>
                 {open && (
                     <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
                         <motion.div
@@ -112,7 +114,9 @@ const QuoteButton = ({
                         </motion.div>
                     </div>
                 )}
-            </AnimatePresence>
+                </AnimatePresence>,
+                document.body
+            )}
         </>
     );
 };
