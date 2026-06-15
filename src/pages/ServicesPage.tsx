@@ -79,8 +79,8 @@ const services: Service[] = [
             {
                 type: 'list', items: [
                     'Nuestros filtros de mangas están diseñados y fabricados con materiales de alta calidad.',
-                    'Filtración superior para máxima protección del sistema y del personal.',
-                    'Fabricados con material ignífugo.',
+                    'Filtros de cartuchos con eficiencia de filtrado de hasta 5 micrones.',
+                    'Fabricación con material ignífugo y conductores antiestáticos para mejorar la eficiencia de filtrado.',
                     'Cambio de filtros en campo.'
                 ]
             },
