@@ -23,12 +23,12 @@ const services: Service[] = [
     {
         icon: '/nuevas imagenes/iconos servicios/3.png',
         title: 'Revestimiento de Chutes',
-        description: 'Diseño y fabricación con acero A36 y revestido con plancha de acero manganeso.'
+        description: 'Diseño y fabricación especializada con acero estructural y revestimiento: acero al manganeso, carburo de cromo, carburo de tungsteno y cerámico en alúmina al 92%, ZTA, ARZ.'
     },
     {
         icon: '/nuevas imagenes/iconos servicios/4.png',
         title: 'Suministro y Mantenimiento de Colectores de Polvo',
-        description: 'Filtros de mangas de alta calidad, diseñados para máxima eficiencia de filtración y larga vida útil.'
+        description: 'Filtros de mangas con eficiencia de filtrado de hasta 5 micrones, ignífugos y para humedad.'
     },
     {
         icon: '/nuevas imagenes/iconos servicios/5.png',
@@ -37,8 +37,8 @@ const services: Service[] = [
     },
     {
         icon: '/nuevas imagenes/iconos servicios/6.png',
-        title: 'Fabricación de Tanques y Ductos',
-        description: 'Fabricación especializada en acero inoxidable y A36 para diversas industrias.'
+        title: 'Fabricación de Ductos para Sistemas de Colección de Polvo',
+        description: 'Fabricación especializada en acero al carbono con revestimiento cerámico, poliuretano y caucho.'
     },
     {
         icon: '/nuevas imagenes/iconos servicios/7.png',
