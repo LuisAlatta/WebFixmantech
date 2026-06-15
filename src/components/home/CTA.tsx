@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Mail } from 'lucide-react';
-import { buildQuoteMailto } from '../../data/contact';
+import { ArrowRight } from 'lucide-react';
+import QuoteButton from '../ui/QuoteButton';
 
 const CTA = () => {
     return (
@@ -31,27 +31,15 @@ const CTA = () => {
                         Contáctenos hoy mismo y descubra por qué somos el socio estratégico número uno en el sur del país.
                     </p>
 
-                    <div className="flex flex-wrap items-center justify-center gap-5">
-                        <motion.a
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            href="https://wa.me/51996087437?text=Hola,%20deseo%20solicitar%20asesoría%20especializada"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-4 bg-secondary-900 text-white px-12 py-6 rounded-full font-black uppercase tracking-[0.2em] text-base md:text-lg shadow-2xl hover:bg-primary-600 transition-all duration-300"
-                        >
-                            Contáctate con oficina técnica
-                            <ArrowRight size={20} />
-                        </motion.a>
-                        <motion.a
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            href={buildQuoteMailto('Asesoría Especializada', 'Hola, deseo solicitar asesoría especializada.')}
-                            className="inline-flex items-center gap-3 bg-transparent text-secondary-900 px-12 py-6 rounded-full font-black uppercase tracking-[0.2em] text-base md:text-lg border-2 border-secondary-900 hover:bg-secondary-900 hover:text-white transition-all duration-300"
-                        >
-                            <Mail size={20} /> Cotizar por Correo
-                        </motion.a>
-                    </div>
+                    <QuoteButton
+                        waMessage="Hola, deseo solicitar asesoría especializada."
+                        emailSubject="Asesoría Especializada"
+                        emailBody="Hola, deseo solicitar asesoría especializada."
+                        className="inline-flex items-center gap-4 bg-secondary-900 text-white px-12 py-6 rounded-full font-black uppercase tracking-[0.2em] text-base md:text-lg shadow-2xl hover:bg-primary-600 transition-all duration-300"
+                    >
+                        Contáctate con oficina técnica
+                        <ArrowRight size={20} />
+                    </QuoteButton>
 
                     <div className="mt-12 flex justify-center gap-8 text-black font-bold text-base md:text-lg tracking-widest uppercase">
                         <span>Eficiencia</span>

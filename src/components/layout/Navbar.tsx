@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Menu, X, Mail } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { buildQuoteMailto } from '../../data/contact';
-
-const QUOTE_MAILTO = buildQuoteMailto('Solicitud de Cotización', 'Hola, quisiera solicitar una cotización.');
+import QuoteButton from '../ui/QuoteButton';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -60,26 +58,11 @@ const Navbar = () => {
                                 {link.name}
                             </NavLink>
                         ))}
-                        <motion.a
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            href="https://wa.me/51996087437"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <QuoteButton
                             className="px-8 py-3 bg-secondary-900 text-white text-xs lg:text-sm font-black uppercase tracking-widest rounded-full hover:bg-primary-600 transition-all shadow-xl shadow-secondary-900/10"
                         >
                             Cotizar Ahora
-                        </motion.a>
-                        <motion.a
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            href={QUOTE_MAILTO}
-                            title="Cotizar por correo"
-                            aria-label="Cotizar por correo"
-                            className="p-3 bg-primary-50 text-primary-600 rounded-full hover:bg-primary-600 hover:text-white transition-all shadow-md"
-                        >
-                            <Mail size={18} />
-                        </motion.a>
+                        </QuoteButton>
                     </nav>
 
                     {/* Mobile Menu Button */}
@@ -117,19 +100,12 @@ const Navbar = () => {
                                     {link.name}
                                 </NavLink>
                             ))}
-                            <a
-                                href="https://wa.me/51996087437"
-                                className="mt-4 p-5 bg-primary-600 text-white text-center rounded-2xl font-black uppercase tracking-[0.2em] text-sm"
+                            <QuoteButton
+                                onSelect={() => setIsOpen(false)}
+                                className="w-full mt-4 p-5 bg-primary-600 text-white text-center rounded-2xl font-black uppercase tracking-[0.2em] text-sm"
                             >
-                                WhatsApp Directo
-                            </a>
-                            <a
-                                href={QUOTE_MAILTO}
-                                onClick={() => setIsOpen(false)}
-                                className="p-5 bg-secondary-900 text-white text-center rounded-2xl font-black uppercase tracking-[0.2em] text-sm flex items-center justify-center gap-3"
-                            >
-                                <Mail size={18} /> Cotizar por Correo
-                            </a>
+                                Cotizar Ahora
+                            </QuoteButton>
                         </nav>
                     </motion.div>
                 )}
