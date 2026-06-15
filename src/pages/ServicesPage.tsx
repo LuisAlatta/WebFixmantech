@@ -8,8 +8,10 @@ import {
     Factory,
     Settings,
     ArrowRight,
-    CheckCircle2
+    CheckCircle2,
+    Mail
 } from 'lucide-react';
+import { buildQuoteMailto } from '../data/contact';
 
 interface ContentBlock {
     type: 'list' | 'paragraph' | 'section';
@@ -72,7 +74,7 @@ const services: Service[] = [
         id: 3,
         title: 'SUMINISTRO Y MANTENIMIENTO DE COLECTORES DE POLVO',
         image: '/nuevas imagenes/IMAGEN 010 MANTO COLECTORES DE POLVO.png',
-        modalImage: '/nuevas imagenes/IMAGEN 011.png',
+        modalImage: '/nuevas imagenes/colectores_polvo_modal.jpg',
         icon: <Database />,
         content: [
             {
@@ -331,12 +333,23 @@ const ServicesPage = () => {
                                         ))}
                                     </div>
 
-                                    <a
-                                        href="https://wa.me/51996087437"
-                                        className="inline-flex items-center gap-3 py-4 px-10 bg-secondary-900 text-white rounded-full font-black uppercase tracking-widest text-lg hover:bg-primary-600 transition-all shadow-xl active:scale-95 self-end mt-6 shrink-0"
-                                    >
-                                        Consultar Proyecto Especial <ArrowRight size={18} />
-                                    </a>
+                                    <div className="flex flex-wrap items-center justify-end gap-3 mt-6 shrink-0">
+                                        <a
+                                            href={buildQuoteMailto(
+                                                `Consulta de proyecto: ${selectedService.title}`,
+                                                `Hola, deseo consultar sobre el servicio: ${selectedService.title}.`
+                                            )}
+                                            className="inline-flex items-center gap-3 py-4 px-8 bg-white text-secondary-900 rounded-full font-black uppercase tracking-widest text-lg border-2 border-secondary-900 hover:bg-secondary-900 hover:text-white transition-all shadow-xl active:scale-95"
+                                        >
+                                            <Mail size={18} /> Por Correo
+                                        </a>
+                                        <a
+                                            href="https://wa.me/51996087437"
+                                            className="inline-flex items-center gap-3 py-4 px-10 bg-secondary-900 text-white rounded-full font-black uppercase tracking-widest text-lg hover:bg-primary-600 transition-all shadow-xl active:scale-95"
+                                        >
+                                            Consultar Proyecto Especial <ArrowRight size={18} />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </motion.div>
@@ -356,12 +369,20 @@ const ServicesPage = () => {
                         <h2 className="text-4xl md:text-6xl font-[900] text-white mb-8 tracking-tighter uppercase leading-none">
                             ¿Listo para llevar su industria al <span className="text-primary-500">Siguiente Nivel</span>?
                         </h2>
-                        <a
-                            href="https://wa.me/51996087437"
-                            className="inline-block px-16 py-6 bg-white text-secondary-900 rounded-full font-black uppercase tracking-widest text-lg md:text-xl hover:bg-primary-600 hover:text-white transition-all shadow-2xl active:scale-95"
-                        >
-                            Solicitar Presupuesto Técnico
-                        </a>
+                        <div className="flex flex-wrap items-center justify-center gap-4">
+                            <a
+                                href="https://wa.me/51996087437"
+                                className="inline-block px-16 py-6 bg-white text-secondary-900 rounded-full font-black uppercase tracking-widest text-lg md:text-xl hover:bg-primary-600 hover:text-white transition-all shadow-2xl active:scale-95"
+                            >
+                                Solicitar Presupuesto Técnico
+                            </a>
+                            <a
+                                href={buildQuoteMailto('Solicitud de Presupuesto Técnico', 'Hola, deseo solicitar un presupuesto técnico.')}
+                                className="inline-flex items-center gap-3 px-16 py-6 bg-transparent text-white rounded-full font-black uppercase tracking-widest text-lg md:text-xl border-2 border-white hover:bg-white hover:text-secondary-900 transition-all shadow-2xl active:scale-95"
+                            >
+                                <Mail size={20} /> Por Correo
+                            </a>
+                        </div>
                     </div>
                 </motion.div>
             </div>

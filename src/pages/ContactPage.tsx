@@ -65,8 +65,8 @@ const ContactPage = () => {
                                     <div>
                                         <h4 className="font-black text-secondary-900 uppercase tracking-widest text-xs mb-2">Consultas Técnicas</h4>
                                         <p className="text-lg text-black font-medium">gerencia_ventas@fixmantech.com</p>
-                                        <p className="text-sm text-black">operaciones@fixmantech.com</p>
-                                        <p className="text-sm text-black">ventas@fixmantech.com</p>
+                                        <p className="text-lg text-black font-medium">operaciones@fixmantech.com</p>
+                                        <p className="text-lg text-black font-medium">ventas@fixmantech.com</p>
                                     </div>
                                 </div>
                             </div>

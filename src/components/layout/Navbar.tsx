@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { buildQuoteMailto } from '../../data/contact';
+
+const QUOTE_MAILTO = buildQuoteMailto('Solicitud de Cotización', 'Hola, quisiera solicitar una cotización.');
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -67,6 +70,16 @@ const Navbar = () => {
                         >
                             Cotizar Ahora
                         </motion.a>
+                        <motion.a
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            href={QUOTE_MAILTO}
+                            title="Cotizar por correo"
+                            aria-label="Cotizar por correo"
+                            className="p-3 bg-primary-50 text-primary-600 rounded-full hover:bg-primary-600 hover:text-white transition-all shadow-md"
+                        >
+                            <Mail size={18} />
+                        </motion.a>
                     </nav>
 
                     {/* Mobile Menu Button */}
@@ -109,6 +122,13 @@ const Navbar = () => {
                                 className="mt-4 p-5 bg-primary-600 text-white text-center rounded-2xl font-black uppercase tracking-[0.2em] text-sm"
                             >
                                 WhatsApp Directo
+                            </a>
+                            <a
+                                href={QUOTE_MAILTO}
+                                onClick={() => setIsOpen(false)}
+                                className="p-5 bg-secondary-900 text-white text-center rounded-2xl font-black uppercase tracking-[0.2em] text-sm flex items-center justify-center gap-3"
+                            >
+                                <Mail size={18} /> Cotizar por Correo
                             </a>
                         </nav>
                     </motion.div>

@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Mail } from 'lucide-react';
+import { buildQuoteMailto } from '../../data/contact';
 
 const Hero = () => {
     return (
@@ -10,12 +12,12 @@ const Hero = () => {
                     initial={{ scale: 1.15, opacity: 0 }}
                     animate={{ scale: 1.05, opacity: 1 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
-                    src="/nuevas imagenes/IMAGEN 001.png"
+                    src="/nuevas imagenes/portada_principal.jpg"
                     alt="Modern Industrial Facility"
                     className="w-full h-full object-cover"
                 />
                 <img
-                    src="/nuevas imagenes/IMAGEN 001.png"
+                    src="/nuevas imagenes/portada_principal.jpg"
                     alt=""
                     aria-hidden="true"
                     className="absolute inset-0 w-full h-full object-cover blur-[6px] scale-110"
@@ -63,6 +65,14 @@ const Hero = () => {
                                 className="group px-12 py-6 bg-primary-600 text-white rounded-full font-black uppercase tracking-widest text-lg md:text-xl flex items-center gap-3 hover:bg-secondary-900 transition-all shadow-2xl shadow-primary-500/30"
                             >
                                 Solicitar Cotización
+                            </motion.a>
+                            <motion.a
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                href={buildQuoteMailto('Solicitud de Cotización', 'Hola, quisiera solicitar una cotización.')}
+                                className="group px-12 py-6 bg-white/10 text-white rounded-full font-black uppercase tracking-widest text-lg md:text-xl flex items-center gap-3 border-2 border-white hover:bg-white hover:text-secondary-900 transition-all shadow-2xl backdrop-blur-sm"
+                            >
+                                <Mail size={22} /> Cotizar por Correo
                             </motion.a>
                             <Link
                                 to="/servicios"

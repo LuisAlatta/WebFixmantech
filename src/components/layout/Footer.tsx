@@ -83,10 +83,16 @@ const Footer = () => {
                             </li>
                             <li className="flex items-start gap-3">
                                 <Mail className="text-primary-400 shrink-0 mt-0.5" size={22} />
-                                <div className="text-white break-all leading-relaxed">
-                                    <p>gerencia_ventas@fixmantech.com</p>
-                                    <p>operaciones@fixmantech.com</p>
-                                    <p>ventas@fixmantech.com</p>
+                                <div className="text-white leading-relaxed text-base tracking-tight space-y-1 min-w-0">
+                                    <p className="whitespace-nowrap">
+                                        <a href="mailto:gerencia_ventas@fixmantech.com" className="hover:text-primary-400 transition-colors">gerencia_ventas@fixmantech.com</a>
+                                    </p>
+                                    <p className="whitespace-nowrap">
+                                        <a href="mailto:operaciones@fixmantech.com" className="hover:text-primary-400 transition-colors">operaciones@fixmantech.com</a>
+                                    </p>
+                                    <p className="whitespace-nowrap">
+                                        <a href="mailto:ventas@fixmantech.com" className="hover:text-primary-400 transition-colors">ventas@fixmantech.com</a>
+                                    </p>
                                 </div>
                             </li>
                         </ul>

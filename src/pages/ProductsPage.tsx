@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { X, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { X, ArrowRight, CheckCircle2, Mail } from 'lucide-react';
+import { buildQuoteMailto } from '../data/contact';
 
 interface ContentBlock {
     type: 'list' | 'paragraph' | 'section';
@@ -440,14 +441,25 @@ const ProductsPage = () => {
                                             <p className="text-black text-xs font-black uppercase tracking-widest mb-1">¿Desea una oferta formal?</p>
                                             <p className="text-secondary-900 font-bold">Solicite un presupuesto técnico hoy mismo.</p>
                                         </div>
-                                        <a
-                                            href={`https://wa.me/51996087437?text=Hola, deseo una cotización del producto: ${selectedProduct.name}`}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="px-12 py-5 bg-secondary-900 text-white rounded-full font-black uppercase tracking-widest text-xs hover:bg-primary-600 transition-all shadow-xl flex items-center gap-3"
-                                        >
-                                            Solicitar Cotización <ArrowRight size={18} />
-                                        </a>
+                                        <div className="flex flex-wrap items-center gap-3">
+                                            <a
+                                                href={buildQuoteMailto(
+                                                    `Cotización de producto: ${selectedProduct.name}`,
+                                                    `Hola, deseo una cotización del producto: ${selectedProduct.name}.`
+                                                )}
+                                                className="px-10 py-5 bg-white text-secondary-900 rounded-full font-black uppercase tracking-widest text-xs border-2 border-secondary-900 hover:bg-secondary-900 hover:text-white transition-all shadow-xl flex items-center gap-3"
+                                            >
+                                                <Mail size={16} /> Por Correo
+                                            </a>
+                                            <a
+                                                href={`https://wa.me/51996087437?text=Hola, deseo una cotización del producto: ${selectedProduct.name}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="px-12 py-5 bg-secondary-900 text-white rounded-full font-black uppercase tracking-widest text-xs hover:bg-primary-600 transition-all shadow-xl flex items-center gap-3"
+                                            >
+                                                Solicitar Cotización <ArrowRight size={18} />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </motion.div>
