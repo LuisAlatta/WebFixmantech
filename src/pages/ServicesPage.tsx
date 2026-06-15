@@ -53,7 +53,7 @@ const services: Service[] = [
         id: 2,
         title: 'SISTEMAS DE SUPRESIÓN DE POLVO DE ALTA TECNOLOGÍA',
         image: '/nuevas imagenes/IMAGEN 008 SISTEMAS DE SUPRESIÓN DE POLVO.png',
-        modalImage: '/nuevas imagenes/IMAGEN 009 - SISTEMA DE NIEBLA.png',
+        modalImage: '/nuevas imagenes/supresion_polvo_modal.jpg',
         icon: <Wrench />,
         content: [
             { type: 'paragraph', text: 'Tecnología en supresión de polvo de alta eficiencia utilizando microgotas atomizadas que capturan partículas suspendidas en el aire, controlando emisiones fugitivas sin humedecer significativamente el material procesado y/o equipos, aplicando niebla seca, consumo mínimo de agua.' },
