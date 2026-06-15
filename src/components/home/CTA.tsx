@@ -41,23 +41,14 @@ const CTA = () => {
                         <ArrowRight size={20} />
                     </QuoteButton>
 
-                    <div className="mt-12 flex justify-center gap-8 text-black font-bold text-base md:text-lg tracking-widest uppercase">
-                        <span>Eficiencia</span>
+                    <div className="mt-12 flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-black font-bold text-base md:text-lg tracking-widest uppercase">
+                        <span>Excelencia</span>
                         <span className="text-primary-500">•</span>
-                        <span>Seguridad</span>
+                        <span>Compromiso</span>
                         <span className="text-primary-500">•</span>
-                        <span>Garantía</span>
-                    </div>
-
-                    <div className="mt-14 pt-10 border-t border-secondary-200 flex flex-wrap justify-center gap-x-12 gap-y-4">
-                        {['Excelencia', 'Compromiso', 'Calidad', 'Integridad'].map((value) => (
-                            <span
-                                key={value}
-                                className="text-xl md:text-3xl font-[900] text-secondary-900 uppercase tracking-tight"
-                            >
-                                {value}
-                            </span>
-                        ))}
+                        <span>Calidad</span>
+                        <span className="text-primary-500">•</span>
+                        <span>Integridad</span>
                     </div>
                 </motion.div>
             </div>
