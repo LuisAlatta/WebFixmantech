@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, Mail, X } from 'lucide-react';
-import { WHATSAPP_NUMBER, QUOTE_EMAIL, buildQuoteMailto } from '../../data/contact';
+import { MessageCircle, Mail, X, ExternalLink, Copy, Check } from 'lucide-react';
+import { WHATSAPP_NUMBER, QUOTE_EMAIL, buildGmailCompose } from '../../data/contact';
 
 interface QuoteButtonProps {
     children: React.ReactNode;
@@ -28,12 +28,29 @@ const QuoteButton = ({
     onSelect,
 }: QuoteButtonProps) => {
     const [open, setOpen] = useState(false);
+    const [copied, setCopied] = useState(false);
     const waHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`;
-    const mailHref = buildQuoteMailto(emailSubject, emailBody);
+    const gmailHref = buildGmailCompose(emailSubject, emailBody);
+
+    const close = () => {
+        setOpen(false);
+        setCopied(false);
+    };
 
     const handleSelect = () => {
-        setOpen(false);
+        close();
         onSelect?.();
+    };
+
+    const copyEmail = async () => {
+        try {
+            await navigator.clipboard.writeText(QUOTE_EMAIL);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2500);
+        } catch {
+            // Fallback para navegadores sin permiso de portapapeles
+            window.prompt('Copia el correo:', QUOTE_EMAIL);
+        }
     };
 
     return (
@@ -56,7 +73,7 @@ const QuoteButton = ({
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            onClick={(e) => { e.stopPropagation(); setOpen(false); }}
+                            onClick={(e) => { e.stopPropagation(); close(); }}
                             className="absolute inset-0 bg-secondary-950/80 backdrop-blur-md"
                         />
                         <motion.div
@@ -68,7 +85,7 @@ const QuoteButton = ({
                         >
                             <button
                                 type="button"
-                                onClick={() => setOpen(false)}
+                                onClick={close}
                                 aria-label="Cerrar"
                                 className="absolute top-5 right-5 p-2 text-secondary-400 hover:text-secondary-900 hover:bg-secondary-100 rounded-full transition-all"
                             >
@@ -81,6 +98,7 @@ const QuoteButton = ({
                             <p className="text-secondary-500 font-medium mb-8">Elige tu canal de preferencia.</p>
 
                             <div className="space-y-4">
+                                {/* WhatsApp */}
                                 <a
                                     href={waHref}
                                     target="_blank"
@@ -97,19 +115,36 @@ const QuoteButton = ({
                                     </span>
                                 </a>
 
-                                <a
-                                    href={mailHref}
-                                    onClick={handleSelect}
-                                    className="flex items-center gap-4 w-full p-5 rounded-2xl bg-secondary-900 text-white font-bold shadow-lg hover:bg-primary-600 active:scale-[0.98] transition-all"
-                                >
-                                    <span className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
-                                        <Mail size={24} />
-                                    </span>
-                                    <span className="leading-tight min-w-0">
-                                        <span className="block text-lg">Correo electrónico</span>
-                                        <span className="block text-sm font-medium text-white/70 truncate">{QUOTE_EMAIL}</span>
-                                    </span>
-                                </a>
+                                {/* Correo electrónico: abrir en Gmail o copiar la dirección */}
+                                <div className="rounded-2xl bg-secondary-900 text-white p-5 shadow-lg">
+                                    <div className="flex items-center gap-4 mb-4">
+                                        <span className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
+                                            <Mail size={24} />
+                                        </span>
+                                        <span className="leading-tight min-w-0">
+                                            <span className="block text-lg font-bold">Correo electrónico</span>
+                                            <span className="block text-sm font-medium text-white/70 truncate">{QUOTE_EMAIL}</span>
+                                        </span>
+                                    </div>
+                                    <div className="flex gap-3">
+                                        <a
+                                            href={gmailHref}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            onClick={handleSelect}
+                                            className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white text-secondary-900 font-bold text-sm hover:bg-primary-600 hover:text-white active:scale-[0.98] transition-all"
+                                        >
+                                            <ExternalLink size={16} /> Abrir en Gmail
+                                        </a>
+                                        <button
+                                            type="button"
+                                            onClick={copyEmail}
+                                            className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-white/30 text-white font-bold text-sm hover:bg-white/10 active:scale-[0.98] transition-all"
+                                        >
+                                            {copied ? <><Check size={16} /> ¡Copiado!</> : <><Copy size={16} /> Copiar correo</>}
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </motion.div>
                     </div>
