@@ -43,8 +43,8 @@ const ContactPage = () => {
                                         <MapPin size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-black text-secondary-900 uppercase tracking-widest text-xs mb-2">Sede Central</h4>
-                                        <p className="text-lg text-black font-light">Cerro Colorado, Arequipa, Perú</p>
+                                        <h4 className="font-black text-secondary-900 uppercase tracking-widest text-sm mb-2">Sede Central</h4>
+                                        <p className="text-2xl text-black font-light">Cerro Colorado, Arequipa, Perú</p>
                                     </div>
                                 </div>
 
@@ -53,8 +53,8 @@ const ContactPage = () => {
                                         <Phone size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-black text-secondary-900 uppercase tracking-widest text-xs mb-2">Central Telefónica</h4>
-                                        <p className="text-lg text-secondary-900 font-bold">+51 996 087 437</p>
+                                        <h4 className="font-black text-secondary-900 uppercase tracking-widest text-sm mb-2">Central Telefónica</h4>
+                                        <p className="text-2xl text-secondary-900 font-bold">+51 996 087 437</p>
                                     </div>
                                 </div>
 
@@ -63,10 +63,10 @@ const ContactPage = () => {
                                         <Mail size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-black text-secondary-900 uppercase tracking-widest text-xs mb-2">Consultas Técnicas</h4>
-                                        <p className="text-lg text-black font-medium">gerencia_ventas@fixmantech.com</p>
-                                        <p className="text-lg text-black font-medium">operaciones@fixmantech.com</p>
-                                        <p className="text-lg text-black font-medium">ventas@fixmantech.com</p>
+                                        <h4 className="font-black text-secondary-900 uppercase tracking-widest text-sm mb-2">Consultas Técnicas</h4>
+                                        <p className="text-xl text-black font-medium">gerencia_ventas@fixmantech.com</p>
+                                        <p className="text-xl text-black font-medium">operaciones@fixmantech.com</p>
+                                        <p className="text-xl text-black font-medium">ventas@fixmantech.com</p>
                                     </div>
                                 </div>
                             </div>
