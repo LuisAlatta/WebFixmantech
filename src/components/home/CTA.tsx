@@ -41,7 +41,7 @@ const CTA = () => {
                         <ArrowRight size={20} />
                     </QuoteButton>
 
-                    <div className="mt-12 flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-black font-bold text-base md:text-lg tracking-widest uppercase">
+                    <div className="mt-12 flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-black font-bold text-lg md:text-2xl tracking-widest uppercase">
                         <span>Excelencia</span>
                         <span className="text-primary-500">•</span>
                         <span>Compromiso</span>
