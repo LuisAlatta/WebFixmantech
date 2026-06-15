@@ -50,8 +50,10 @@ const Hero = () => {
                             Soluciones Integrales para su <span className="text-primary-500">Industria</span>
                         </h1>
                         <p className="text-2xl md:text-3xl text-white mb-8 leading-relaxed max-w-2xl font-light">
-                            Especialistas en mantenimiento industrial, instalaciones eléctricas y proyectos de ingeniería.
-                            Garantizamos eficiencia, seguridad y calidad superior.
+                            Desarrollamos soluciones especializadas en mantenimiento industrial y proyectos de ingeniería
+                            que permiten maximizar la confiabilidad y disponibilidad de planta, fortaleciendo el desempeño
+                            de los procesos eléctricos, mecánicos y operacionales, y garantizando una operación segura,
+                            eficiente y sostenible.
                         </p>
 
                         <div className="flex flex-wrap gap-5">
