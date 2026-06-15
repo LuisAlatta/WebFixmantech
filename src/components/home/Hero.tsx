@@ -4,7 +4,7 @@ import QuoteButton from '../ui/QuoteButton';
 
 const Hero = () => {
     return (
-        <section className="relative h-screen flex items-center justify-center overflow-hidden bg-white">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-36 pb-20 md:pt-40 md:pb-24">
             {/* Background Image: sharp base + blurred layer masked on the left */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <motion.img
