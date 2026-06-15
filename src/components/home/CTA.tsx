@@ -48,6 +48,17 @@ const CTA = () => {
                         <span className="text-primary-500">•</span>
                         <span>Garantía</span>
                     </div>
+
+                    <div className="mt-14 pt-10 border-t border-secondary-200 flex flex-wrap justify-center gap-x-12 gap-y-4">
+                        {['Excelencia', 'Compromiso', 'Calidad', 'Integridad'].map((value) => (
+                            <span
+                                key={value}
+                                className="text-xl md:text-3xl font-[900] text-secondary-900 uppercase tracking-tight"
+                            >
+                                {value}
+                            </span>
+                        ))}
+                    </div>
                 </motion.div>
             </div>
         </section>
