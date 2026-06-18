@@ -31,7 +31,7 @@ const categories: Category[] = [
     {
         id: 'wear-system',
         name: 'WAER SYSTEM--LAMINATED WHITE IRON',
-        image: '/images/products/prod_waer_system_cat.png',
+        image: '/nuevas imagenes/wear_system_categoria.jpg',
         count: 'Alta Resistencia 700BHN',
         description: 'Bloques de desgaste laminados únicos que combinan hierro blanco ASTM A532 con acero dulce soldable.',
         products: [
@@ -233,7 +233,7 @@ const ProductsPage = () => {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                     >
-                        <h2 className="text-primary-500 font-black uppercase tracking-[0.3em] text-lg md:text-xl mb-4">Catálogo de Productos</h2>
+                        <h2 className="text-white font-black uppercase tracking-[0.3em] text-lg md:text-xl mb-4">Catálogo de Productos</h2>
                         <h1 className="text-5xl md:text-7xl font-[900] mb-6 tracking-tighter uppercase">
                             Alta <span className="text-primary-500">Tecnología</span> Industrial
                         </h1>
@@ -265,7 +265,7 @@ const ProductsPage = () => {
                             <div className="absolute inset-0 bg-gradient-to-t from-secondary-950 via-secondary-900/20 to-transparent z-10" />
 
                             <div className="absolute inset-0 p-12 flex flex-col justify-end z-20">
-                                <span className="text-primary-500 font-black uppercase tracking-widest text-sm mb-4 bg-primary-500/10 self-start px-4 py-1 rounded-full backdrop-blur-md">
+                                <span className="text-white font-black uppercase tracking-widest text-lg mb-4 bg-primary-600/40 self-start px-4 py-1.5 rounded-full backdrop-blur-md">
                                     {category.count}
                                 </span>
                                 <h3 className="text-4xl font-[900] text-white mb-4 tracking-tight uppercase leading-none">{category.name}</h3>

@@ -73,8 +73,8 @@ const Footer = () => {
                             <li className="flex items-start gap-3">
                                 <MapPin className="text-primary-400 shrink-0 mt-0.5" size={22} />
                                 <div className="text-white leading-relaxed">
-                                    <p>PP.JJ. José Santos Atahualpa Mz T Lote 06</p>
-                                    <p>Cerro Colorado, Arequipa, Perú</p>
+                                    <p>CCP. Semirural Pachacutec Grupo Zona 24 y 25 Mz. 16 Lote 3D</p>
+                                    <p>Cerro Colorado - Arequipa, Perú</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
@@ -88,7 +88,7 @@ const Footer = () => {
                                         <a href="mailto:gerencia_ventas@fixmantech.com" className="hover:text-primary-400 transition-colors">gerencia_ventas@fixmantech.com</a>
                                     </p>
                                     <p className="whitespace-nowrap">
-                                        <a href="mailto:operaciones@fixmantech.com" className="hover:text-primary-400 transition-colors">operaciones@fixmantech.com</a>
+                                        <a href="mailto:ventasyservicios@fixmantech.com" className="hover:text-primary-400 transition-colors">ventasyservicios@fixmantech.com</a>
                                     </p>
                                     <p className="whitespace-nowrap">
                                         <a href="mailto:ventas@fixmantech.com" className="hover:text-primary-400 transition-colors">ventas@fixmantech.com</a>

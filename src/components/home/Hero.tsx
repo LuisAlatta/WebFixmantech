@@ -5,7 +5,7 @@ import QuoteButton from '../ui/QuoteButton';
 const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-36 pb-20 md:pt-40 md:pb-24">
-            {/* Background Image: sharp base + blurred layer masked on the left */}
+            {/* Background Image */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <motion.img
                     initial={{ scale: 1.15, opacity: 0 }}
@@ -14,16 +14,6 @@ const Hero = () => {
                     src="/nuevas imagenes/portada_principal.jpg"
                     alt="Modern Industrial Facility"
                     className="w-full h-full object-cover"
-                />
-                <img
-                    src="/nuevas imagenes/portada_principal.jpg"
-                    alt=""
-                    aria-hidden="true"
-                    className="absolute inset-0 w-full h-full object-cover blur-[6px] scale-110"
-                    style={{
-                        maskImage: 'linear-gradient(to right, black 0%, black 12%, transparent 25%)',
-                        WebkitMaskImage: 'linear-gradient(to right, black 0%, black 12%, transparent 25%)',
-                    }}
                 />
             </div>
 

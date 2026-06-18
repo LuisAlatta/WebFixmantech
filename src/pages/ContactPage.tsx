@@ -12,7 +12,7 @@ const ContactPage = () => {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                     >
-                        <h2 className="text-primary-500 font-black uppercase tracking-[0.3em] text-lg md:text-xl mb-4">Canales Oficiales</h2>
+                        <h2 className="text-white font-black uppercase tracking-[0.3em] text-lg md:text-xl mb-4">Canales Oficiales</h2>
                         <h1 className="text-5xl md:text-7xl font-[900] mb-6 tracking-tighter uppercase leading-none">
                             Conecte con <span className="text-primary-500">Expertos</span>
                         </h1>
@@ -44,7 +44,7 @@ const ContactPage = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-black text-secondary-900 uppercase tracking-widest text-sm mb-2">Sede Central</h4>
-                                        <p className="text-2xl text-black font-light">Cerro Colorado, Arequipa, Perú</p>
+                                        <p className="text-2xl text-black font-light">CCP. Semirural Pachacutec Grupo Zona 24 y 25 Mz. 16 Lote 3D, Cerro Colorado - Arequipa</p>
                                     </div>
                                 </div>
 
@@ -65,7 +65,7 @@ const ContactPage = () => {
                                     <div>
                                         <h4 className="font-black text-secondary-900 uppercase tracking-widest text-sm mb-2">Consultas Técnicas</h4>
                                         <p className="text-xl text-black font-medium">gerencia_ventas@fixmantech.com</p>
-                                        <p className="text-xl text-black font-medium">operaciones@fixmantech.com</p>
+                                        <p className="text-xl text-black font-medium">ventasyservicios@fixmantech.com</p>
                                         <p className="text-xl text-black font-medium">ventas@fixmantech.com</p>
                                     </div>
                                 </div>
@@ -81,7 +81,7 @@ const ContactPage = () => {
                         >
                             <iframe
                                 title="Mapa Sede Central"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.666014416345!2d-77.04279318561763!3d-12.045432145717316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b73a5a4083%3A0xc392bd988950dbe2!2sLima!5e0!3m2!1ses!2spe!4v1699999999999!5m2!1ses!2spe"
+                                src="https://maps.google.com/maps?q=-16.395546,-71.580665&z=16&hl=es&output=embed"
                                 width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy"
                                 className="grayscale group-hover:grayscale-0 transition-all duration-[1s]"
                             ></iframe>

@@ -24,12 +24,12 @@ const AboutPage = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="text-primary-500 font-black uppercase tracking-[0.3em] text-lg md:text-xl mb-6">Nuestra Esencia</h2>
+                        <h2 className="text-white font-black uppercase tracking-[0.3em] text-2xl md:text-3xl mb-6">Nuestra Esencia</h2>
                         <h1 className="text-6xl md:text-8xl font-[900] mb-8 tracking-tighter uppercase leading-none">
                             Ingeniería que <span className="text-primary-500">Trasciende</span>
                         </h1>
-                        <p className="text-2xl md:text-3xl text-white max-w-3xl mx-auto font-light leading-relaxed">
-                            Más de una década consolidando la confianza de los gigantes industriales del Perú.
+                        <p className="text-2xl md:text-3xl text-white max-w-3xl mx-auto font-light leading-relaxed uppercase tracking-wide">
+                            Confiabilidad operativa, resultados sostenibles
                         </p>
                     </motion.div>
                 </div>
