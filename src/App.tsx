@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import { MotionConfig } from 'framer-motion';
 import Layout from './components/layout/Layout';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
@@ -21,18 +22,20 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <Layout>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/servicios" element={<ServicesPage />} />
-          <Route path="/productos" element={<ProductsPage />} />
-          <Route path="/nosotros" element={<AboutPage />} />
-          <Route path="/contactenos" element={<ContactPage />} />
-        </Routes>
-      </Layout>
-    </Router>
+    <MotionConfig reducedMotion="user">
+      <Router>
+        <ScrollToTop />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/servicios" element={<ServicesPage />} />
+            <Route path="/productos" element={<ProductsPage />} />
+            <Route path="/nosotros" element={<AboutPage />} />
+            <Route path="/contactenos" element={<ContactPage />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </MotionConfig>
   );
 }
 
