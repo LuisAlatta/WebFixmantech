@@ -11,7 +11,7 @@ const Hero = () => {
                     initial={{ scale: 1.15, opacity: 0 }}
                     animate={{ scale: 1.05, opacity: 1 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
-                    src="/nuevas imagenes/portada_principal.jpg"
+                    src="/nuevas imagenes/portada_inicio.jpg"
                     alt="Modern Industrial Facility"
                     className="w-full h-full object-cover"
                 />
